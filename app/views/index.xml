@@ -1,0 +1,23 @@
+<Alloy>
+  <TabGroup class="style-tabs-bottom-navigation shift-mode-none theme-titanium-light-solid-no-title-bar">
+    <Tab module="tikit.ui" title="Alerts" icon="mio mi-notifications text-3xl" activeIcon="mit mi-notifications text-3xl">
+      <Require src="sections/alerts" />
+    </Tab>
+
+    <Tab module="tikit.ui" title="Avatars" icon="mio mi-account_circle text-3xl" activeIcon="mit mi-account_circle text-3xl">
+      <Require src="sections/avatars" />
+    </Tab>
+
+    <Tab module="tikit.ui" title="Buttons" icon="mio mi-ballot text-3xl" activeIcon="mit mi-ballot text-3xl">
+      <Require src="sections/buttons" />
+    </Tab>
+
+    <Tab module="tikit.ui" title="Cards" icon="mio mi-payment text-3xl" activeIcon="mit mi-payment text-3xl">
+      <Require src="sections/cards" />
+    </Tab>
+
+    <Tab module="tikit.ui" class="active-tint-violet-900 active-title-violet-900" title="Tabs" icon="mio mi-security_update_good text-3xl" activeIcon="mit mi-security_update_good text-3xl">
+      <Require src="sections/tabs" />
+    </Tab>
+  </TabGroup>
+</Alloy>

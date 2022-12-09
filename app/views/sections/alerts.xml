@@ -1,0 +1,68 @@
+<Alloy module="tikit.ui">
+  <Window title="Alerts" class="ios:extend-safe-area-false ios:nav-bar-hidden" onClick="doClick">
+    <ScrollView class="wh-screen vertical disable-bounce scroll-type-vertical content-w-screen">
+      <Card variant="content" color="black" title="Alloy.Globals.welcome.title" subtitle="Alloy.Globals.welcome.subtitle" text="Alloy.Globals.welcome.text" />
+      <Card variant="code" color="black" copy="true" title="Alloy.Globals.installation.code.title" text='Alloy.Globals.installation.code.text' />
+
+      <Card variant="content" color="black" title="Alloy.Globals.installation.title" subtitle="Alloy.Globals.installation.subtitle" text="Alloy.Globals.installation.text" classes="mt-4"/>
+      <Card variant="code" color="black" copy="true" title="Alloy.Globals.installation.code2.title" text='Alloy.Globals.installation.code2.text' />
+
+      <Card variant="content" color="black" title="Alloy.Globals.alerts.title" subtitle="Alloy.Globals.alerts.subtitle" text="Alloy.Globals.alerts.text" classes="mt-4" />
+      <Card variant="code" color="black" copy="true" title="Alloy.Globals.alerts.code.title" text='Alloy.Globals.alerts.code.text' />
+
+      <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.alerts.extra.title" subtitle="Alloy.Globals.alerts.extra.subtitle" text="Alloy.Globals.alerts.extra.text" />
+      <Card variant="code" color="black" copy="true" title="Alloy.Globals.alerts.extra.code.title" text='Alloy.Globals.alerts.extra.code.text' />
+
+      <!-- callout Variant -->
+      <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.alerts.variants.callout.title" subtitle="Alloy.Globals.alerts.variants.callout.subtitle" text="Alloy.Globals.alerts.variants.callout.text" />
+      <Card variant="code" color="black" copy="true" title="Alloy.Globals.alerts.variants.callout.code.title" text='Alloy.Globals.alerts.variants.callout.code.text' />
+
+      <!-- callout Variant Examples -->
+      <View class="w-screen vertical">
+        <Alert variant="callout" color="primary" title="Primary Alert - Title" classes="mt-4" text="Lorem ipsum dolor sit amet consectetur adipisicing" />
+        <Alert variant="callout" color="secondary" title="Secondary Alert - Title" classes="mt-4" text="Lorem ipsum dolor sit amet consectetur adipisicing" />
+        <Alert variant="callout" color="success" title="Success Alert - Title" classes="mt-4" text="Lorem ipsum dolor sit amet consectetur adipisicing" />
+        <Alert variant="callout" color="danger" title="Danger Alert - Title" classes="mt-4" text="Lorem ipsum dolor sit amet consectetur adipisicing" />
+        <Alert variant="callout" color="warning" title="Warning Alert - Title" classes="mt-4" text="Lorem ipsum dolor sit amet consectetur adipisicing" />
+        <Alert variant="callout" color="info" title="Info Alert - Title" classes="mt-4" text="Lorem ipsum dolor sit amet consectetur adipisicing" />
+        <Alert variant="callout" color="dark" title="Dark Alert - Title" classes="mt-4" text="Lorem ipsum dolor sit amet consectetur adipisicing" />
+        <Alert variant="callout" color="light" title="Light Alert - Title" classes="mt-4" text="Lorem ipsum dolor sit amet consectetur adipisicing" />
+      </View>
+
+      <!-- pop Variant -->
+      <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.alerts.variants.pop.title" subtitle="Alloy.Globals.alerts.variants.pop.subtitle" text="Alloy.Globals.alerts.variants.pop.text" />
+      <Card variant="code" color="black" copy="true" title="Alloy.Globals.alerts.variants.pop.code.title" text='Alloy.Globals.alerts.variants.pop.code.text' />
+
+      <!-- pop Variant Examples -->
+      <View class="w-screen vertical">
+        <Alert variant="pop" color="primary" classes="mt-4" icon="mi mi-pending_actions text-3xl" title="Primary Alert with custom Icon" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora eaque repudiandae eos nam, ea eius ipsam neque magni distinctio." />
+        <Alert variant="pop" color="secondary" classes="mt-4" title="Secondary Alert - Title" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora eaque repudiandae eos nam, ea eius ipsam neque magni distinctio." />
+        <Alert variant="pop" color="success" classes="mt-4" title="Success Alert - Title" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora eaque repudiandae eos nam, ea eius ipsam neque magni distinctio." />
+        <Alert variant="pop" color="danger" classes="mt-4" title="Danger Alert - Title" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora eaque repudiandae eos nam, ea eius ipsam neque magni distinctio." />
+        <Alert variant="pop" color="warning" classes="mt-4" title="Warning Alert - Title" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora eaque repudiandae eos nam, ea eius ipsam neque magni distinctio." />
+        <Alert variant="pop" color="info" classes="mt-4" title="Info Alert - Title" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora eaque repudiandae eos nam, ea eius ipsam neque magni distinctio." />
+        <Alert variant="pop" color="dark" classes="mt-4" title="Dark Alert - Title" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora eaque repudiandae eos nam, ea eius ipsam neque magni distinctio." />
+        <Alert variant="pop" color="light" classes="mt-4" title="Light Alert - Title" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora eaque repudiandae eos nam, ea eius ipsam neque magni distinctio." />
+        <Label text="Pop Alerts cast a shadow, make sure you add extra space or additional elements at the bottom if you enclosed them in a View." class="h-auto mx-4 text-xs text-center text-gray-900 mt-0.5" />
+      </View>
+
+      <!-- solid Variant -->
+      <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.alerts.variants.solid.title" subtitle="Alloy.Globals.alerts.variants.solid.subtitle" text="Alloy.Globals.alerts.variants.solid.text" />
+      <Card variant="code" color="black" copy="true" title="Alloy.Globals.alerts.variants.solid.code.title" text='Alloy.Globals.alerts.variants.solid.code.text' />
+
+      <!-- solid Variant Examples -->
+      <View class="w-screen vertical">
+        <Alert variant="solid" color="primary" title="Primary Alert with custom Icon" icon="mi mi-pending_actions text-2xl" classes="mt-4" />
+        <Alert variant="solid" color="secondary" title="Secondary Alert - Title" classes="mt-4" />
+        <Alert variant="solid" color="success" title="Success Alert - Title" classes="mt-4" />
+        <Alert variant="solid" color="danger" title="Danger Alert - Title" classes="mt-4" />
+        <Alert variant="solid" color="warning" title="Warning Alert - Title" classes="mt-4" />
+        <Alert variant="solid" color="info" title="Info Alert - Title" classes="mt-4" />
+        <Alert variant="solid" color="dark" title="Dark Alert - Title" classes="mt-4" />
+        <Alert variant="solid" color="light" title="Light Alert - Title" classes="mt-4" />
+      </View>
+    </ScrollView>
+
+    <Alert variant="pop" color="secondary" delay="500" dismissible="true" title="Alloy.Globals.welcome.title" text="Alloy.Globals.welcome.subtitle" />
+  </Window>
+</Alloy>

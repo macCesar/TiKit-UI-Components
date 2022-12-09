@@ -1,0 +1,16 @@
+<Alloy module="tikit.ui">
+  <Window title="Tabs" class="ios:extend-safe-area-false ios:nav-bar-hidden" onClick="doClick">
+    <ScrollView class="wh-screen vertical disable-bounce scroll-type-vertical content-w-screen">
+      <Card variant="content" color="black" title="Alloy.Globals.tabsSection.title" subtitle="Alloy.Globals.tabsSection.subtitle" text="Alloy.Globals.tabsSection.text" />
+      <Card variant="code" color="black" copy="true" title="Alloy.Globals.tabsSection.code.title" text='Alloy.Globals.tabsSection.code.text' />
+
+      <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.tabsSection.extra.title" subtitle="Alloy.Globals.tabsSection.extra.subtitle" text="Alloy.Globals.tabsSection.extra.text" />
+      <Card variant="code" color="black" copy="true" title="Alloy.Globals.tabsSection.extra.code.title" text='Alloy.Globals.tabsSection.extra.code.text' />
+
+      <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.tabsSection.copyFonts.title" subtitle="Alloy.Globals.tabsSection.copyFonts.subtitle" text="Alloy.Globals.tabsSection.copyFonts.text" />
+      <Card variant="code" color="black" copy="true" title="Alloy.Globals.tabsSection.copyFonts.code.title" text='Alloy.Globals.tabsSection.copyFonts.code.text' />
+
+      <Card variant="quote" color="black" name="The TiKit UI Components Team" text='You no longer have to struggle with multiple icon sizes, colors and positionning anymore!' />
+    </ScrollView>
+  </Window>
+</Alloy>
