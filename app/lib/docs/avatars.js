@@ -14,7 +14,7 @@ TiKit Avatar Component contains 6 variants:
 With 6 different sizes each: xs, sm, md, lg, xl and 2xl.`,
   code: {
     title: 'Avatar Component',
-    text: `<Avatar variant="chip" size="base" module="tikit.ui" name="John Doe" image="link-to-image.jpg"/>`
+    text: '<Avatar variant="chip" size="base" module="tikit.ui" name="John Doe" image="link-to-image.jpg"/>'
   },
   variants: {
     chip: {
@@ -25,7 +25,7 @@ With 6 different sizes each: xs, sm, md, lg, xl and 2xl.`,
 The default colors are bg-gray-200 and text-gray-500. To change them use the 'classes' property, like the example below.`,
       code: {
         title: 'chip variant with custom colors',
-        text: `<Avatar variant="chip" size="base" name="Mr. John Doe" image="https://randomuser.me/api/portraits/men/86.jpg" classes="bg-violet-900 text-violet-50"/>`
+        text: '<Avatar variant="chip" size="base" name="Mr. John Doe" image="https://randomuser.me/api/portraits/men/86.jpg" classes="bg-violet-900 text-violet-50"/>'
       }
     },
     circular: {
@@ -36,7 +36,7 @@ The default colors are bg-gray-200 and text-gray-500. To change them use the 'cl
 Use the 'classes' prop to change the border color.`,
       code: {
         title: 'circular variant',
-        text: `<Avatar variant="circular" size="base" module="tikit.ui" border="true" image="https://randomuser.me/api/portraits/men/86.jpg"/>`
+        text: '<Avatar variant="circular" size="base" module="tikit.ui" border="true" image="https://randomuser.me/api/portraits/men/86.jpg"/>'
       }
     },
     square: {
@@ -47,7 +47,7 @@ Use the 'classes' prop to change the border color.`,
 Use the 'classes' prop to change the border color.`,
       code: {
         title: 'square variant',
-        text: `<Avatar variant="square" size="base" module="tikit.ui" border="true" classes="border-violet-900" image="https://randomuser.me/api/portraits/men/86.jpg"/>`
+        text: '<Avatar variant="square" size="base" module="tikit.ui" border="true" classes="border-violet-900" image="https://randomuser.me/api/portraits/men/86.jpg"/>'
       }
     },
     portrait: {
@@ -58,7 +58,7 @@ Use the 'classes' prop to change the border color.`,
 The default border color is border-gray-500, use the 'classes' prop to change it.`,
       code: {
         title: 'portrait variant',
-        text: `<Avatar variant="portrait" size="base" module="tikit.ui" classes="border-violet-900" image="https://randomuser.me/api/portraits/men/86.jpg"/>`
+        text: '<Avatar variant="portrait" size="base" module="tikit.ui" classes="border-violet-900" image="https://randomuser.me/api/portraits/men/86.jpg"/>'
       }
     },
     landscape: {
@@ -69,13 +69,13 @@ The default border color is border-gray-500, use the 'classes' prop to change it
 The default border color is border-gray-500, use the 'classes' prop to change it.`,
       code: {
         title: 'landscape variant',
-        text: `<Avatar variant="landscape" size="base" module="tikit.ui" classes="border-violet-900" image="https://randomuser.me/api/portraits/men/86.jpg"/>`
+        text: '<Avatar variant="landscape" size="base" module="tikit.ui" classes="border-violet-900" image="https://randomuser.me/api/portraits/men/86.jpg"/>'
       }
     },
     stacked: {
       title: 'stacked variant',
       subtitle: 'Main props: title, icon and last',
-      text: "To properly adjust the right margin of the last avatar in a stack, set its 'last' property to true.",
+      text: 'To properly adjust the right margin of the last avatar in a stack, set its \'last\' property to true.',
       code: {
         title: 'stacked variant',
         text: `<View class="horizontal">
@@ -87,4 +87,4 @@ The default border color is border-gray-500, use the 'classes' prop to change it
       }
     },
   }
-};
+}

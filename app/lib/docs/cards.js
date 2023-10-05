@@ -1,6 +1,6 @@
 Alloy.Globals.cards = {
-  title: "Cards",
-  subtitle: "General props: variant, color and classes",
+  title: 'Cards',
+  subtitle: 'General props: variant, color and classes',
   text: `Cards are used to group and display content in a way that is easily readable, it serves as an entry point to more detailed information.
 
 TiKit Card Component contains 4 variants:
@@ -14,7 +14,7 @@ With 4 colors each: black, dark, light and white.
 All white variant examples have a colored background so you can see them more clearly.`,
   code: {
     title: 'Card Component',
-    text: `<Card variant="code" color="black" module="tikit.ui" copy="true" title="Card Title" text="Some code or text to display!"/>`
+    text: '<Card variant="code" color="black" module="tikit.ui" copy="true" title="Card Title" text="Some code or text to display!"/>'
   },
   variants: {
     code: {
@@ -36,7 +36,7 @@ We are using 'FiraCode-Light' font family in all examples.`
       text: 'When you need to display an image with a title and a small description.',
       code: {
         title: 'showcase variant',
-        text: `<Card variant="showcase" color="black" title="Pocket" text='Mobile app marketing website' image="images/showcase/1.png"/>`
+        text: '<Card variant="showcase" color="black" title="Pocket" text=\'Mobile app marketing website\' image="images/showcase/1.png"/>'
       }
     },
     quote: {
@@ -45,7 +45,7 @@ We are using 'FiraCode-Light' font family in all examples.`
       text: 'When you need to display a quote from someone.',
       code: {
         title: 'quote variant',
-        text: `<Card variant="quote" color="black" name="John Doe" text="Quas ullam, quis eius a blanditiis..."/>`
+        text: '<Card variant="quote" color="black" name="John Doe" text="Quas ullam, quis eius a blanditiis..."/>'
       }
     },
     content: {
@@ -54,8 +54,8 @@ We are using 'FiraCode-Light' font family in all examples.`
       text: 'Display a block of text with a large title, a highlighted subtitle and paragraphs of text.',
       code: {
         title: 'content variant, black',
-        text: `<Card variant="content" color="black" title="content variant, black" subtitle="This is a subtitle" text='Alloy.Globals.lorem'/>`
+        text: '<Card variant="content" color="black" title="content variant, black" subtitle="This is a subtitle" text=\'Alloy.Globals.lorem\'/>'
       }
     }
   }
-};
+}
