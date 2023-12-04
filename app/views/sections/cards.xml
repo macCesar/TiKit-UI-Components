@@ -10,7 +10,7 @@
       <Card variant="code" color="black" copy="true" title="code variant - black" text='<Card variant="code" color="black" copy="true" title="code variant - black" text="Some code or text to show!" />' />
       <Card variant="code" color="dark" copy="true" classes="mt-4" title="code variant - dark" text='<Card variant="code" color="dark" copy="true" title="code variant - dark" text="Some code or text to show!" />' />
       <Card variant="code" color="light" copy="true" classes="mt-4" title="code variant - light" text='<Card variant="code" color="light" copy="true" title="code variant - light" text="Some code or text to show!" />' />
-      <View class="w-screen mt-4 bg-violet-900">
+      <View class="mt-4 w-screen bg-violet-900">
         <Card variant="code" color="white" copy="true" classes="my-4" title="code variant - white" text='<Card variant="code" color="white" copy="true" title="code variant - white" text="Some code or text to show!" />' />
       </View>
 
@@ -20,7 +20,7 @@
       <Card variant="showcase" color="black" classes="mt-4" title="Pocket" text='Mobile app marketing website' image="images/showcase/2.png" />
       <Card variant="showcase" color="dark" classes="mt-4" title="Lemon Squeezy" text='SaaS application' image="images/showcase/1.png" />
       <Card variant="showcase" color="light" classes="mt-4" title="Algolia Docs" text='Documentation website' image="images/showcase/3.png" />
-      <View class="w-screen mt-4 bg-violet-900">
+      <View class="mt-4 w-screen bg-violet-900">
         <Card variant="showcase" color="white" classes="my-4" title="Loom" text='SaaS marketing website' image="images/showcase/4.png" />
       </View>
 
@@ -37,11 +37,11 @@
       <!-- Block Variant -->
       <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.cards.variants.content.title" subtitle="Alloy.Globals.cards.variants.content.subtitle" text="Alloy.Globals.cards.variants.content.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.cards.variants.content.code.title" text='Alloy.Globals.cards.variants.content.code.text' />
-      <Card variant="content" color="black" classes="mt-4" title="block variant: black" subtitle="This is a subtitle" text='Alloy.Globals.lorem' />
-      <Card variant="content" color="dark" classes="mt-2" title="block variant: dark" subtitle="This is a subtitle" text='Alloy.Globals.lorem' />
-      <Card variant="content" color="light" classes="mt-2" title="block variant: light" subtitle="This is a subtitle" text='Alloy.Globals.lorem' />
+      <Card variant="content" color="black" classes="mt-4" title="variant: black block" subtitle="This is a subtitle" text='Alloy.Globals.lorem' />
+      <Card variant="content" color="dark" classes="mt-2" title="variant: dark block" subtitle="This is a subtitle" text='Alloy.Globals.lorem' />
+      <Card variant="content" color="light" classes="mt-2" title="variant: light block" subtitle="This is a subtitle" text='Alloy.Globals.lorem' />
       <View class="mt-2 bg-violet-900">
-        <Card variant="content" color="white" title="block variant: white" subtitle="This is a subtitle" text='Alloy.Globals.lorem' />
+        <Card variant="content" color="white" title="variant: white block" subtitle="This is a subtitle" text='Alloy.Globals.lorem' />
       </View>
     </ScrollView>
   </Window>

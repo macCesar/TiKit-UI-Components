@@ -7,7 +7,7 @@
 
       <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.buttons.variants.border.title" subtitle="Alloy.Globals.buttons.variants.border.subtitle" text="Alloy.Globals.buttons.variants.border.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.buttons.variants.border.code.title" text='Alloy.Globals.buttons.variants.border.code.text' />
-      <View class="mt-4 horizontal">
+      <View class="horizontal mt-4">
         <Button variant="border" size="xs" title="Border" classes="m-0.5" />
         <Button variant="border" size="sm" title="Border" classes="m-0.5" />
         <Button variant="border" size="base" title="Border" classes="m-0.5" />
@@ -18,7 +18,7 @@
 
       <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.buttons.variants.borderRounded.title" subtitle="Alloy.Globals.buttons.variants.borderRounded.subtitle" text="Alloy.Globals.buttons.variants.borderRounded.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.buttons.variants.borderRounded.code.title" text='Alloy.Globals.buttons.variants.borderRounded.code.text' />
-      <View class="mt-4 horizontal">
+      <View class="horizontal mt-4">
         <Button variant="border-rounded" size="xs" title="Border Rounded" classes="m-0.5" />
         <Button variant="border-rounded" size="sm" title="Border Rounded" classes="m-0.5" />
         <Button variant="border-rounded" size="base" title="Border Rounded" classes="m-0.5" />
@@ -29,7 +29,7 @@
 
       <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.buttons.variants.filled.title" subtitle="Alloy.Globals.buttons.variants.filled.subtitle" text="Alloy.Globals.buttons.variants.filled.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.buttons.variants.filled.code.title" text='Alloy.Globals.buttons.variants.filled.code.text' />
-      <View class="mt-4 horizontal">
+      <View class="horizontal mt-4">
         <Button variant="filled" size="xs" title="Filled" classes="m-0.5" />
         <Button variant="filled" size="sm" title="Filled" classes="m-0.5" />
         <Button variant="filled" size="base" title="Filled" classes="m-0.5" />
@@ -40,7 +40,7 @@
 
       <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.buttons.variants.filledRounded.title" subtitle="Alloy.Globals.buttons.variants.filledRounded.subtitle" text="Alloy.Globals.buttons.variants.filledRounded.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.buttons.variants.filledRounded.code.title" text='Alloy.Globals.buttons.variants.filledRounded.code.text' />
-      <View class="mt-4 horizontal">
+      <View class="horizontal mt-4">
         <Button variant="filled-rounded" size="xs" title="Filled Rounded" classes="m-0.5" />
         <Button variant="filled-rounded" size="sm" title="Filled Rounded" classes="m-0.5" />
         <Button variant="filled-rounded" size="base" title="Filled Rounded" classes="m-0.5" />
@@ -51,7 +51,7 @@
 
       <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.buttons.variants.iconLeft.title" subtitle="Alloy.Globals.buttons.variants.iconLeft.subtitle" text="Alloy.Globals.buttons.variants.iconLeft.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.buttons.variants.iconLeft.code.title" text='Alloy.Globals.buttons.variants.iconLeft.code.text' />
-      <View class="mt-4 horizontal">
+      <View class="horizontal mt-4">
         <Button variant="icon-left" size="xs" title="Button" classes="m-0.5" />
         <Button variant="icon-left" size="sm" title="Button" classes="m-0.5" />
         <Button variant="icon-left" size="base" title="Button" classes="m-0.5" />
@@ -62,7 +62,7 @@
 
       <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.buttons.variants.iconRight.title" subtitle="Alloy.Globals.buttons.variants.iconRight.subtitle" text="Alloy.Globals.buttons.variants.iconRight.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.buttons.variants.iconRight.code.title" text='Alloy.Globals.buttons.variants.iconRight.code.text' />
-      <View class="mt-4 horizontal">
+      <View class="horizontal mt-4">
         <Button variant="icon-right" size="xs" title="Button" classes="m-0.5" />
         <Button variant="icon-right" size="sm" title="Button" classes="m-0.5" />
         <Button variant="icon-right" size="base" title="Button" classes="m-0.5" />
@@ -74,7 +74,7 @@
       <!-- Custom Icon -->
       <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.buttons.extra.title" subtitle="Alloy.Globals.buttons.extra.subtitle" text="Alloy.Globals.buttons.extra.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.buttons.extra.code.title" text='Alloy.Globals.buttons.extra.code.text' />
-      <Button variant="icon-left" size="base" icon="mi mi-pending_actions text-2xl text-violet-50" title="Pending Actions" classes="my-4 font-bold bg-violet-900" />
+      <Button variant="icon-left" size="base" icon="mi mi-pending_actions text-2xl text-violet-50" title="Pending Actions" classes="my-4 bg-violet-900 font-bold" />
     </ScrollView>
   </Window>
 </Alloy>

@@ -18,7 +18,7 @@
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.alerts.variants.callout.code.title" text='Alloy.Globals.alerts.variants.callout.code.text' />
 
       <!-- callout Variant Examples -->
-      <View class="w-screen vertical">
+      <View class="vertical w-screen">
         <Alert variant="callout" color="primary" title="Primary Alert - Title" classes="mt-4" text="Lorem ipsum dolor sit amet consectetur adipisicing" />
         <Alert variant="callout" color="secondary" title="Secondary Alert - Title" classes="mt-4" text="Lorem ipsum dolor sit amet consectetur adipisicing" />
         <Alert variant="callout" color="success" title="Success Alert - Title" classes="mt-4" text="Lorem ipsum dolor sit amet consectetur adipisicing" />
@@ -34,7 +34,7 @@
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.alerts.variants.pop.code.title" text='Alloy.Globals.alerts.variants.pop.code.text' />
 
       <!-- pop Variant Examples -->
-      <View class="w-screen vertical">
+      <View class="vertical w-screen">
         <Alert variant="pop" color="primary" classes="mt-4" icon="mi mi-pending_actions text-3xl" title="Primary Alert with custom Icon" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora eaque repudiandae eos nam, ea eius ipsam neque magni distinctio." />
         <Alert variant="pop" color="secondary" classes="mt-4" title="Secondary Alert - Title" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora eaque repudiandae eos nam, ea eius ipsam neque magni distinctio." />
         <Alert variant="pop" color="success" classes="mt-4" title="Success Alert - Title" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora eaque repudiandae eos nam, ea eius ipsam neque magni distinctio." />
@@ -43,7 +43,7 @@
         <Alert variant="pop" color="info" classes="mt-4" title="Info Alert - Title" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora eaque repudiandae eos nam, ea eius ipsam neque magni distinctio." />
         <Alert variant="pop" color="dark" classes="mt-4" title="Dark Alert - Title" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora eaque repudiandae eos nam, ea eius ipsam neque magni distinctio." />
         <Alert variant="pop" color="light" classes="mt-4" title="Light Alert - Title" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora eaque repudiandae eos nam, ea eius ipsam neque magni distinctio." />
-        <Label text="Pop Alerts cast a shadow, make sure you add extra space or additional elements at the bottom if you enclosed them in a View." class="h-auto mx-4 text-xs text-center text-gray-900 mt-0.5" />
+        <Label text="Pop Alerts cast a shadow, make sure you add extra space or additional elements at the bottom if enclosed them in View." class="mx-4 mt-0.5 h-auto text-center text-xs text-gray-900" />
       </View>
 
       <!-- solid Variant -->
@@ -51,7 +51,7 @@
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.alerts.variants.solid.code.title" text='Alloy.Globals.alerts.variants.solid.code.text' />
 
       <!-- solid Variant Examples -->
-      <View class="w-screen vertical">
+      <View class="vertical w-screen">
         <Alert variant="solid" color="primary" title="Primary Alert with custom Icon" icon="mi mi-pending_actions text-2xl" classes="mt-4" />
         <Alert variant="solid" color="secondary" title="Secondary Alert - Title" classes="mt-4" />
         <Alert variant="solid" color="success" title="Success Alert - Title" classes="mt-4" />
