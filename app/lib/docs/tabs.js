@@ -27,11 +27,11 @@ For example you can set active tint and title color for each tab by using the 'a
   },
   copyFonts: {
     title: 'Free Icon Libraries',
-    subtitle: 'copy-fonts command in PurgeTSS',
-    text: 'To copy the free versions of Font Awesome, Material Icons, Material Symbols or Framework7 Icons to your project, use the \'copy-font\' command in PurgeTSS:',
+    subtitle: 'icon-library command in PurgeTSS',
+    text: 'To copy the free versions of Font Awesome, Material Icons, Material Symbols or Framework7 Icons to your project, use the \'icon-library\' command in PurgeTSS:',
     code: {
-      title: 'copy-fonts command in PurgeTSS',
-      text: `> purgetss copy-fonts --vendor=fa,mi,ms,f7
+      title: 'icon-library command in PurgeTSS',
+      text: `> purgetss icon-library --vendor=fa,mi,ms,f7
 
 • fa, fontawesome = Font Awesome Icons
 • mi, materialicons = Material Icons
