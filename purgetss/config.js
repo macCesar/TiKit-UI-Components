@@ -41,6 +41,9 @@ module.exports = {
         }
       }
     },
-    fontFamily: { mono: 'FiraCode-Light', 'mono-medium': 'FiraCode-Medium' }
+    fontFamily: {
+      mono: 'FiraCode-Light',
+      'mono-medium': 'FiraCode-Medium'
+    }
   }
 }

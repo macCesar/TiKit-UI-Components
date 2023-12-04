@@ -1,6 +1,6 @@
-// PurgeTSS v6.2.35
+// PurgeTSS v6.2.42
 // Created by César Estrada
-// https://github.com/macCesar/purgeTSS
+// https://purgetss.com
 
 // Ti Elements
 'ImageView[platform=ios]': { hires: true }
@@ -206,11 +206,11 @@
 '.bg-gray-700/7.5': { backgroundColor: '#13374151' }
 '.bg-gray-700/80': { backgroundColor: '#cc374151' }
 '.bg-gray-700/90': { backgroundColor: '#e6374151' }
-'.bg-gray-900/10': { backgroundColor: '#1a111827' }
-'.bg-gray-900/50': { backgroundColor: '#80111827' }
-'.bg-gray-900/7.5': { backgroundColor: '#13111827' }
-'.bg-gray-900/80': { backgroundColor: '#cc111827' }
-'.bg-gray-900/90': { backgroundColor: '#e6111827' }
+'.bg-gray-950/10': { backgroundColor: '#1a030712' }
+'.bg-gray-950/50': { backgroundColor: '#80030712' }
+'.bg-gray-950/7.5': { backgroundColor: '#13030712' }
+'.bg-gray-950/80': { backgroundColor: '#cc030712' }
+'.bg-gray-950/90': { backgroundColor: '#e6030712' }
 '.bg-white/10': { backgroundColor: '#1affffff' }
 '.bg-white/50': { backgroundColor: '#80ffffff' }
 '.bg-white/7.5': { backgroundColor: '#13ffffff' }
@@ -219,7 +219,7 @@
 '.bg-white/93.5': { backgroundColor: '#eeffffff' }
 '.border-gray-500/90': { borderColor: '#e66b7280' }
 '.border-gray-700/90': { borderColor: '#e6374151' }
-'.border-gray-900/90': { borderColor: '#e6111827' }
+'.border-gray-950/90': { borderColor: '#e6030712' }
 '.border-white/90': { borderColor: '#e6ffffff' }
 '.ios:bg-selected-black/10[platform=ios]': { backgroundSelectedColor: '#1a000000' }
 '.text-black/80': { color: '#cc000000', textColor: '#cc000000' }
@@ -231,9 +231,9 @@
 '.text-gray-700/10': { color: '#1a374151', textColor: '#1a374151' }
 '.text-gray-700/70': { color: '#b3374151', textColor: '#b3374151' }
 '.text-gray-700/90': { color: '#e6374151', textColor: '#e6374151' }
-'.text-gray-900/10': { color: '#1a111827', textColor: '#1a111827' }
-'.text-gray-900/70': { color: '#b3111827', textColor: '#b3111827' }
-'.text-gray-900/90': { color: '#e6111827', textColor: '#e6111827' }
+'.text-gray-950/10': { color: '#1a030712', textColor: '#1a030712' }
+'.text-gray-950/70': { color: '#b3030712', textColor: '#b3030712' }
+'.text-gray-950/90': { color: '#e6030712', textColor: '#e6030712' }
 '.text-white/10': { color: '#1affffff', textColor: '#1affffff' }
 '.text-white/70': { color: '#b3ffffff', textColor: '#b3ffffff' }
 '.text-white/80': { color: '#ccffffff', textColor: '#ccffffff' }

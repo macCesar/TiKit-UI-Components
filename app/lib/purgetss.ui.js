@@ -1,12 +1,17 @@
+// PurgeTSS v6.2.42
+// Created by César Estrada
+// https://purgetss.com
+
 function Animation(args) {
-  let param = {
+  const param = {
     id: args.id,
     open: false,
     draggables: [],
     playing: false,
     delay: args.delay ?? 0,
     debug: args.debug ?? false,
-    hasTransformation: (args.scale !== undefined || args.rotate !== undefined),
+    moveByProperties: args.moveByProperties ?? false,
+    hasTransformation: (args.scale !== undefined || args.rotate !== undefined)
   }
 
   logger('Create Animation View: ' + param.id)
@@ -26,20 +31,18 @@ function Animation(args) {
   if (args.animationProperties && args.animationProperties.open && ('anchorPoint' in args.animationProperties.open || 'rotate' in args.animationProperties.open || 'scale' in args.animationProperties.open)) {
     logger('   -> Creating transformOnOpen')
     args.transformOnOpen = Ti.UI.createMatrix2D(args.animationProperties.open)
-    delete args.animationProperties.open
+    // delete args.animationProperties.open;
   }
 
   if (args.animationProperties && args.animationProperties.close && ('anchorPoint' in args.animationProperties.close || 'rotate' in args.animationProperties.close || 'scale' in args.animationProperties.close)) {
     logger('   -> Creating transformOnClose')
     args.transformOnClose = Ti.UI.createMatrix2D(args.animationProperties.close)
-    delete args.animationProperties.close
+    // delete args.animationProperties.close;
   }
 
   // TODO: Create a library of useful animations!!
   animationView.play = (_views, _cb) => {
-    if (param.debug) {
-      console.log('')
-    } // Just for debug
+    if (param.debug) { console.log('') } // Just for debug
     logger('`play` method called on: ' + param.id);
     (param.playing) ? logger(`$.${param.view.id}: is playing...`) : mainPlayApplyFn(_views, _cb)
   }
@@ -47,17 +50,13 @@ function Animation(args) {
   animationView.toggle = animationView.play
 
   animationView.apply = (_views, _cb) => {
-    if (param.debug) {
-      console.log('')
-    } // Just for debug
+    if (param.debug) { console.log('') } // Just for debug
     logger('`apply` method called on: ' + param.id)
     mainPlayApplyFn(_views, _cb, 'apply')
   }
 
   animationView.draggable = (_views) => {
-    if (param.debug) {
-      console.log('')
-    } // Just for debug
+    if (param.debug) { console.log('') } // Just for debug
     logger('`draggable` method called on: ' + param.id)
     if (Array.isArray(_views)) {
       _views.forEach((_view, key) => {
@@ -88,76 +87,79 @@ function Animation(args) {
     }
   }
 
-  function draggable(_view) {
-    if (_view) {
+  function draggable(draggableView) {
+    if (draggableView) {
       logger('   -> `draggable` helper')
 
       let offsetX, offsetY
 
       if (args.bounds) {
-        _view.bounds = (_view.bounds) ? { ...args.bounds, ..._view.bounds } : args.bounds
+        draggableView.bounds = (draggableView.bounds) ? { ...args.bounds, ...draggableView.bounds } : args.bounds
       }
 
-      param.draggables.push(_view)
+      param.draggables.push(draggableView)
 
       Ti.Gesture.addEventListener('orientationchange', () => {
         if (OS_ANDROID) {
+          const BOUNDARY_CHECK_DELAY = 1000
           setTimeout(() => {
-            checkBoundaries(_view)
-          }, 1000)
+            checkBoundaries(draggableView)
+          }, BOUNDARY_CHECK_DELAY)
         } else {
-          checkBoundaries(_view)
+          checkBoundaries(draggableView)
         }
       })
 
-      _view.addEventListener('touchstart', function(e) {
-        offsetX = e.x
-        offsetY = e.y
+      draggableView.addEventListener('touchstart', function(event) {
+        offsetX = event.x
+        offsetY = event.y
 
-        param.draggables.push(param.draggables.splice(realSourceView(e.source).zIndex, 1)[0])
+        param.draggables.push(param.draggables.splice(realSourceView(event.source).zIndex, 1)[0])
 
-        param.draggables.forEach((draggable, key) => {
-          draggable.zIndex = key
-        })
+        param.draggables.forEach((draggable, key) => { draggable.zIndex = key })
 
-        checkDraggable(_view, 'drag')
+        checkDraggable(draggableView, 'drag')
       })
 
-      _view.addEventListener('touchend', () => {
-        checkDraggable(_view, 'drop')
+      draggableView.addEventListener('touchend', () => {
+        checkDraggable(draggableView, 'drop')
       })
 
-      _view.addEventListener('touchmove', function(e) {
-        if (!e.source.transform && !param.hasTransformation && !_view.transform) {
-          let convertedPoint = _view.convertPointToView({ x: e.x, y: e.y }, _view.parent)
+      draggableView.addEventListener('touchmove', function(event) {
+        if (!event.source.transform && !param.hasTransformation && !draggableView.transform) {
+          const convertedPoint = draggableView.convertPointToView({ x: event.x, y: event.y }, draggableView.parent)
 
           let top = Math.round(convertedPoint.y - offsetY)
           let left = Math.round(convertedPoint.x - offsetX)
 
-          if (_view.bounds) {
-            if (_view.bounds.top !== undefined && top < _view.bounds.top) {
-              top = _view.bounds.top
+          if (draggableView.bounds) {
+            if (draggableView.bounds.top !== undefined && top < draggableView.bounds.top) {
+              top = draggableView.bounds.top
             }
-            if (_view.bounds.left !== undefined && left < _view.bounds.left) {
-              left = _view.bounds.left
+            if (draggableView.bounds.left !== undefined && left < draggableView.bounds.left) {
+              left = draggableView.bounds.left
             }
-            if (_view.bounds.right !== undefined && left > _view.parent.rect.width - _view.rect.width - _view.bounds.right) {
-              left = _view.parent.rect.width - _view.rect.width - _view.bounds.right
+            if (draggableView.bounds.right !== undefined && left > draggableView.parent.rect.width - draggableView.rect.width - draggableView.bounds.right) {
+              left = draggableView.parent.rect.width - draggableView.rect.width - draggableView.bounds.right
             }
-            if (_view.bounds.bottom !== undefined && top > _view.parent.rect.height - _view.rect.height - _view.bounds.bottom) {
-              top = _view.parent.rect.height - _view.rect.height - _view.bounds.bottom
+            if (draggableView.bounds.bottom !== undefined && top > draggableView.parent.rect.height - draggableView.rect.height - draggableView.bounds.bottom) {
+              top = draggableView.parent.rect.height - draggableView.rect.height - draggableView.bounds.bottom
             }
           }
 
-          let moveValues = { top: top, left: left, duration: 0 }
+          const moveValues = { top, left, duration: 0 }
 
-          if (_view.constraint === 'vertical') {
+          if (draggableView.constraint === 'vertical') {
             delete moveValues.left
-          } else if (_view.constraint === 'horizontal') {
+          } else if (draggableView.constraint === 'horizontal') {
             delete moveValues.top
           }
 
-          _view.animate(moveValues)
+          if (param.moveByProperties) {
+            draggableView.applyProperties(moveValues)
+          } else {
+            draggableView.animate(moveValues)
+          }
         }
       })
     } else {
@@ -194,6 +196,7 @@ function Animation(args) {
       if (_view.bounds.right !== undefined && _view.left > _view.parent.rect.width - _view.rect.width - _view.bounds.right) {
         _view.left = _view.parent.rect.width - _view.rect.width - _view.bounds.right
       }
+
       if (_view.bounds.bottom !== undefined && _view.top > _view.parent.rect.height - _view.rect.height - _view.bounds.bottom) {
         _view.top = _view.parent.rect.height - _view.rect.height - _view.bounds.bottom
       }
@@ -215,9 +218,7 @@ function Animation(args) {
   }
 
   function logger(_message, forceLog = false) {
-    if (param.debug || forceLog) {
-      console.warn(`::ti.animation:: ${_message}`)
-    }
+    if (param.debug || forceLog) { console.warn(`::ti.animation:: ${_message}`) }
   }
 
   function notFound() {
@@ -226,10 +227,10 @@ function Animation(args) {
 
   function createAnimationObject(_child, type) {
     return Ti.UI.createAnimation({
-      ...(args['animationProperties'] && args['animationProperties']['children']) ?? {},
-      ..._child['animationProperties']['child'] ?? {},
-      ..._child['animationProperties'][type] ?? {},
-      transform: Ti.UI.createMatrix2D(_child['animationProperties'][type] ?? {})
+      ...(args.animationProperties && args.animationProperties.children) ?? {},
+      ..._child.animationProperties.child ?? {},
+      ..._child.animationProperties[type] ?? {},
+      transform: Ti.UI.createMatrix2D(_child.animationProperties[type] ?? {})
     })
   }
 
@@ -237,12 +238,12 @@ function Animation(args) {
   function checkDraggable(_view, _action) {
     logger('Check Draggable')
     logger('   -> `' + _action + '`')
-    let draggingType = _view.draggingType ?? args.draggingType
+    const draggingType = _view.draggingType ?? args.draggingType
     if (_action === 'drag' && _view.draggable && _view.draggable.drag) {
-      let theArgs = (args.draggable) ? { ...args.draggable.drag, ..._view.draggable.drag } : _view.draggable.drag;
+      const theArgs = (args.draggable) ? { ...args.draggable.drag, ..._view.draggable.drag } : _view.draggable.drag;
       (draggingType === 'apply') ? _view.applyProperties(theArgs) : _view.animate(Ti.UI.createAnimation(theArgs))
     } else if (_action === 'drop' && _view.draggable && _view.draggable.drop) {
-      let theArgs = (args.draggable) ? { ...args.draggable.drop, ..._view.draggable.drop } : _view.draggable.drop;
+      const theArgs = (args.draggable) ? { ...args.draggable.drop, ..._view.draggable.drop } : _view.draggable.drop;
       (draggingType === 'apply') ? _view.applyProperties(theArgs) : _view.animate(Ti.UI.createAnimation(theArgs))
     } else if (args.draggable) {
       if (_action === 'drag') {
@@ -258,12 +259,15 @@ function Animation(args) {
       logger('   -> `animate` View')
       param.view = view
       param.playing = true
-      view.animate(Ti.UI.createAnimation(args), e => {
+      view.animate(Ti.UI.createAnimation(args), event => {
         checkComplete(view, action);
 
-        (typeof _cb === 'function') ? _cb(e) : e => {
-          logger('Animation complete on object: ' + JSON.stringify(e))
-        }
+        // eslint-disable-next-line no-unused-expressions
+        (typeof _cb === 'function')
+          ? _cb(event)
+          : () => {
+              logger('Animation complete on object: ' + JSON.stringify(args))
+            }
 
         param.playing = false
       })
@@ -283,10 +287,13 @@ function Animation(args) {
 
       checkComplete(view, action);
 
-      (typeof _cb === 'function') ? _cb() : () => {
-        logger('Animation complete on objects: ' + JSON.stringify(e))
-        param.playing = false
-      }
+      // eslint-disable-next-line no-unused-expressions
+      (typeof _cb === 'function')
+        ? _cb()
+        : () => {
+            logger('Animation complete on objects: ' + JSON.stringify(args))
+            param.playing = false
+          }
     } else {
       notFound(args)
     }
@@ -294,21 +301,21 @@ function Animation(args) {
 
   function innerAnimations(_view, _action) {
     _.each(_view.children, child => {
-      if (param.open && child['animationProperties'] && child['animationProperties']['open']) {
+      if (param.open && child.animationProperties && child.animationProperties.open) {
         if (_action === 'play') {
           child.animate(createAnimationObject(child, 'open'), () => {
-            if (child['animationProperties']['complete']) {
+            if (child.animationProperties.complete) {
               child.animate(createAnimationObject(child, 'complete'))
             }
           })
         } else {
           child.applyProperties({
-            transform: Ti.UI.createMatrix2D(child['animationProperties']['open']),
-            ...child['animationProperties']['open']
+            transform: Ti.UI.createMatrix2D(child.animationProperties.open),
+            ...child.animationProperties.open
           })
         }
-      } else if (child['animationProperties'] && child['animationProperties']['close']) {
-        (_action === 'play') ? child.animate(createAnimationObject(child, 'close')) : child.applyProperties({ transform: Ti.UI.createMatrix2D(child['animationProperties']['close']), ...child['animationProperties']['close'] })
+      } else if (child.animationProperties && child.animationProperties.close) {
+        (_action === 'play') ? child.animate(createAnimationObject(child, 'close')) : child.applyProperties({ transform: Ti.UI.createMatrix2D(child.animationProperties.close), ...child.animationProperties.close })
       }
     })
   }
@@ -358,6 +365,4 @@ function deviceInfo() {
 }
 exports.deviceInfo = deviceInfo
 
-exports.createAnimation = (args) => {
-  return new Animation(args)
-}
+exports.createAnimation = args => new Animation(args)
