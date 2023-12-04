@@ -2324,6 +2324,6 @@ const icons = {
   zoomIn: '\ue8ff',
   zoomInMap: '\ueb2d',
   zoomOut: '\ue900',
-  zoomOutMap: '\ue56b',
+  zoomOutMap: '\ue56b'
 }
 exports.icons = icons

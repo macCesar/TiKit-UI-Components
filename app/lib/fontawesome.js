@@ -2489,6 +2489,6 @@ const icons = {
   zhihu: '\uf63f',
   korvue: '\uf42f',
   pix: '\ue43a',
-  steamSymbol: '\uf3f6',
+  steamSymbol: '\uf3f6'
 }
 exports.icons = icons
