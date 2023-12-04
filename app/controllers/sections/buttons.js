@@ -1,3 +1,3 @@
-function doClick(e) {
-  Alloy.Globals.events.trigger('savecomponent', e.source)
+function doClick({ source }) {
+  Alloy.Globals.events.trigger('savecomponent', source)
 }
