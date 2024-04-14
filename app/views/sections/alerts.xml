@@ -1,5 +1,5 @@
 <Alloy module="tikit.ui">
-  <Window title="Alerts" class="ios:extend-safe-area-false ios:nav-bar-hidden" onClick="doClick">
+  <Window title="Alerts" class="ios:extend-safe-area-false ios:nav-bar-hidden">
     <ScrollView class="wh-screen vertical disable-bounce scroll-type-vertical content-w-screen">
       <Card variant="content" color="black" title="Alloy.Globals.welcome.title" subtitle="Alloy.Globals.welcome.subtitle" text="Alloy.Globals.welcome.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.installation.code.title" text='Alloy.Globals.installation.code.text' />

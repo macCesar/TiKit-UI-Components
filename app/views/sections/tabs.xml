@@ -1,5 +1,5 @@
 <Alloy module="tikit.ui">
-  <Window title="Tabs" class="ios:extend-safe-area-false ios:nav-bar-hidden" onClick="doClick">
+  <Window title="Tabs" class="ios:extend-safe-area-false ios:nav-bar-hidden">
     <ScrollView class="wh-screen vertical disable-bounce scroll-type-vertical content-w-screen">
       <Card variant="content" color="black" title="Alloy.Globals.tabsSection.title" subtitle="Alloy.Globals.tabsSection.subtitle" text="Alloy.Globals.tabsSection.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.tabsSection.code.title" text='Alloy.Globals.tabsSection.code.text' />

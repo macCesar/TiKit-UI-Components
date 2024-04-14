@@ -1,13 +1,5 @@
 Alloy.Globals.events = _.clone(Backbone.Events)
 
-Alloy.Globals.events.on('savecomponent', (source) => {
-  // let componentImage = source.toImage();
-  // let md5 = Ti.Utils.md5HexDigest(componentImage) + '.png';
-  // Ti.Filesystem.getFile(Ti.Filesystem.tempDirectory, md5).write(componentImage);
-  // Ti.Media.saveToPhotoGallery(componentImage);
-  // console.log('Image saved:', md5);
-})
-
 Alloy.Globals.lorem = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quaerat expedita hic, eveniet eligendi sunt, sapiente pariatur quibusdam dolorum blanditiis obcaecati quis harum? Ducimus quisquam incidunt sapiente optio, ut rem.\n\nRatione laboriosam distinctio fugiat ducimus nemo iure earum officiis cupiditate atque aspernatur veritatis, modi soluta debitis est odit. Doloribus hic exercitationem quos labore ab dicta, ex animi consectetur cum nostrum?'
 
 Alloy.Globals.welcome = {
