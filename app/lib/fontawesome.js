@@ -1,26 +1,20 @@
 /**
- * Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
 */
 
 exports.getIcon = function getIcon(selector) {
-  if (selector === undefined) {
-    throw new Error('Selector missing!')
-  }
+  if (selector === undefined) { throw new Error('Selector missing!') }
   return (icons[selector] !== undefined) ? icons[selector] : 'N/A'
 }
 
 exports.setTitle = function setTitle(selector, object) {
-  if (selector === undefined || object === undefined) {
-    throw new Error('Selector or target Object missing!')
-  }
+  if (selector === undefined || object === undefined) { throw new Error('Selector or target Object missing!') }
   object.title = (icons[selector] !== undefined) ? icons[selector] : 'N/A'
 }
 
 exports.setText = function setText(selector, object) {
-  if (selector === undefined || object === undefined) {
-    throw new Error('Selector or target Object missing!')
-  }
+  if (selector === undefined || object === undefined) { throw new Error('Selector or target Object missing!') }
   object.text = (icons[selector] !== undefined) ? icons[selector] : 'N/A'
 }
 
@@ -791,6 +785,7 @@ const icons = {
   couch: '\uf4b8',
   cediSign: '\ue0df',
   italic: '\uf033',
+  tableCellsColumnLock: '\ue678',
   church: '\uf51d',
   commentsDollar: '\uf653',
   democrat: '\uf747',
@@ -1515,6 +1510,7 @@ const icons = {
   treeCity: '\ue587',
   play: '\uf04b',
   font: '\uf031',
+  tableCellsRowLock: '\ue67a',
   rupiahSign: '\ue23d',
   magnifyingGlass: '\uf002',
   search: '\uf002',
@@ -1858,7 +1854,6 @@ const icons = {
   warning: '\uf071',
   database: '\uf1c0',
   share: '\uf064',
-  arrowTurnRight: '\uf064',
   mailForward: '\uf064',
   bottleDroplet: '\ue4c4',
   maskFace: '\ue1d7',
@@ -1996,6 +1991,7 @@ const icons = {
   yoast: '\uf2b1',
   cloudflare: '\ue07d',
   ups: '\uf7e0',
+  pixiv: '\ue640',
   wpexplorer: '\uf2de',
   dyalog: '\uf399',
   bity: '\uf37a',
@@ -2016,6 +2012,7 @@ const icons = {
   centercode: '\uf380',
   glideG: '\uf2a6',
   drupal: '\uf1a9',
+  jxl: '\ue67b',
   hireAHelper: '\uf3b0',
   creativeCommonsBy: '\uf4e7',
   unity: '\ue049',
@@ -2031,6 +2028,7 @@ const icons = {
   contao: '\uf26d',
   squareFontAwesome: '\ue5ad',
   deskpro: '\uf38f',
+  brave: '\ue63c',
   sistrix: '\uf3ee',
   squareInstagram: '\ue055',
   instagramSquare: '\ue055',
@@ -2087,6 +2085,7 @@ const icons = {
   centos: '\uf789',
   adn: '\uf170',
   cloudsmith: '\uf384',
+  opensuse: '\ue62b',
   piedPiperAlt: '\uf1a8',
   squareDribbble: '\uf397',
   dribbbleSquare: '\uf397',
@@ -2115,6 +2114,7 @@ const icons = {
   itunesNote: '\uf3b5',
   golang: '\ue40f',
   kickstarter: '\uf3bb',
+  squareKickstarter: '\uf3bb',
   grav: '\uf2d6',
   weibo: '\uf18a',
   uncharted: '\ue084',
@@ -2135,6 +2135,7 @@ const icons = {
   laravel: '\uf3bd',
   hotjar: '\uf3b1',
   bluetoothB: '\uf294',
+  squareLetterboxd: '\ue62e',
   stickerMule: '\uf3f7',
   creativeCommonsZero: '\uf4f3',
   hips: '\uf452',
@@ -2146,6 +2147,7 @@ const icons = {
   ccDiscover: '\uf1f2',
   wpbeginner: '\uf297',
   confluence: '\uf78d',
+  shoelace: '\ue60c',
   mdb: '\uf8ca',
   dochub: '\uf394',
   accessibleIcon: '\uf368',
@@ -2187,6 +2189,7 @@ const icons = {
   yCombinator: '\uf23b',
   empire: '\uf1d1',
   envira: '\uf299',
+  googleScholar: '\ue63b',
   squareGitlab: '\ue5ae',
   gitlabSquare: '\ue5ae',
   studiovinari: '\uf3f8',
@@ -2231,6 +2234,7 @@ const icons = {
   bloggerB: '\uf37d',
   opencart: '\uf23d',
   vine: '\uf1ca',
+  signalMessenger: '\ue663',
   paypal: '\uf1ed',
   gitlab: '\uf296',
   typo3: '\uf42b',
@@ -2242,6 +2246,7 @@ const icons = {
   bootstrap: '\uf836',
   odnoklassniki: '\uf263',
   nfcSymbol: '\ue531',
+  mintbit: '\ue62f',
   ethereum: '\uf42e',
   speakerDeck: '\uf83c',
   creativeCommonsNcEu: '\uf4e9',
@@ -2250,9 +2255,11 @@ const icons = {
   ello: '\uf5f1',
   gofore: '\uf3a7',
   bimobject: '\uf378',
+  braveReverse: '\ue63d',
   facebookF: '\uf39e',
   squareGooglePlus: '\uf0d4',
   googlePlusSquare: '\uf0d4',
+  webAwesome: '\ue682',
   mandalorian: '\uf50f',
   firstOrderAlt: '\uf50a',
   osi: '\uf41a',
@@ -2284,6 +2291,7 @@ const icons = {
   soundcloud: '\uf1be',
   digg: '\uf1a6',
   tencentWeibo: '\uf1d5',
+  letterboxd: '\ue62d',
   symfony: '\uf83d',
   maxcdn: '\uf136',
   etsy: '\uf2d7',
@@ -2306,6 +2314,7 @@ const icons = {
   superpowers: '\uf2dd',
   resolving: '\uf3e7',
   xbox: '\uf412',
+  squareWebAwesomeStroke: '\ue684',
   searchengin: '\uf3eb',
   tiktok: '\ue07b',
   squareFacebook: '\uf082',
@@ -2330,6 +2339,7 @@ const icons = {
   dropbox: '\uf16b',
   instagram: '\uf16d',
   cmplid: '\ue360',
+  upwork: '\ue641',
   facebook: '\uf09a',
   gripfire: '\uf3ac',
   jediOrder: '\uf50e',
@@ -2341,6 +2351,7 @@ const icons = {
   tradeFederation: '\uf513',
   autoprefixer: '\uf41c',
   whatsapp: '\uf232',
+  squareUpwork: '\ue67c',
   slideshare: '\uf1e7',
   googlePlay: '\uf3ab',
   viadeo: '\uf2a9',
@@ -2367,6 +2378,7 @@ const icons = {
   readme: '\uf4d5',
   html5: '\uf13b',
   sellsy: '\uf213',
+  squareWebAwesome: '\ue683',
   sass: '\uf41e',
   wirsindhandwerk: '\ue2d0',
   wsh: '\ue2d0',
@@ -2379,6 +2391,7 @@ const icons = {
   apper: '\uf371',
   fortAwesome: '\uf286',
   waze: '\uf83f',
+  bluesky: '\ue671',
   ccJcb: '\uf24b',
   snapchat: '\uf2ab',
   snapchatGhost: '\uf2ab',
@@ -2388,6 +2401,7 @@ const icons = {
   squareBehance: '\uf1b5',
   behanceSquare: '\uf1b5',
   supple: '\uf3f9',
+  webflow: '\ue65c',
   rebel: '\uf1d0',
   css3: '\uf13c',
   staylinked: '\uf3f5',
