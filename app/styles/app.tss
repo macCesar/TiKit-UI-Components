@@ -1,4 +1,4 @@
-// PurgeTSS v6.2.43
+// Purge TSS v6.3.11
 // Created by César Estrada
 // https://purgetss.com
 
@@ -158,7 +158,6 @@
 '.text-xl': { font: { fontSize: 20 } }
 '.text-xs': { font: { fontSize: 12 } }
 '.text-yellow-500': { color: '#eab308', textColor: '#eab308' }
-'.theme-titanium-light-solid-no-title-bar': { theme: 'Theme.Titanium.Light.Solid.NoTitleBar' }
 '.touch-enabled-false': { touchEnabled: false }
 '.touch-feedback': { touchFeedback: true }
 '.vertical': { layout: 'vertical' }

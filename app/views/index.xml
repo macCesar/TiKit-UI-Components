@@ -1,5 +1,5 @@
 <Alloy>
-  <TabGroup class="style-tabs-bottom-navigation shift-mode-none theme-titanium-light-solid-no-title-bar">
+  <TabGroup class="style-tabs-bottom-navigation shift-mode-none">
     <Tab module="tikit.ui" title="Alerts" icon="mio mi-notifications text-3xl" activeIcon="mit mi-notifications text-3xl">
       <Require src="sections/alerts" />
     </Tab>
