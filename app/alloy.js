@@ -3,31 +3,31 @@ Alloy.Globals.events = _.clone(Backbone.Events)
 Alloy.Globals.lorem = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quaerat expedita hic, eveniet eligendi sunt, sapiente pariatur quibusdam dolorum blanditiis obcaecati quis harum? Ducimus quisquam incidunt sapiente optio, ut rem.\n\nRatione laboriosam distinctio fugiat ducimus nemo iure earum officiis cupiditate atque aspernatur veritatis, modi soluta debitis est odit. Doloribus hic exercitationem quos labore ab dicta, ex animi consectetur cum nostrum?'
 
 Alloy.Globals.welcome = {
-  title: 'Welcome to TiKit UI Components',
-  subtitle: 'TiKit is a collection of UI components for Titanium built on top of Alloy and PurgeTSS',
-  text: 'To install it, run the following command in the terminal:',
+  title: 'Hey there! Welcome to TiKit UI Components',
+  subtitle: 'TiKit gives you a sleek collection of UI components for Titanium that work seamlessly with Alloy and PurgeTSS',
+  text: 'Getting started is super easy - just run this command:',
 }
 
 Alloy.Globals.installation = {
-  title: 'Installing the components',
-  subtitle: 'To install TiKit, run the following command in the terminal:',
-  text: 'Once everything is installed on your machine, create a new Alloy project using PurgeTSS, make sure you have \'app.idprefix\' and \'app.idprefix\' settings configured. ( https://purgetss.com/docs/commands/#requirements )',
+  title: 'Setting up your components',
+  subtitle: 'Just run this simple command to get started:',
+  text: 'After installation, create a new Alloy project with PurgeTSS and make sure your \'app.idprefix\' settings are good to go. Need more details? Check out the docs: https://purgetss.com/docs/commands/#requirements',
   code: {
-    title: 'TiKit CLI Installation',
+    title: 'Quick TiKit Setup',
     text: `> [sudo] npm install -g tikit
 
-// Make sure you have PurgeTSS as well:
+// Don't forget PurgeTSS:
 > [sudo] npm install -g purgetss`,
   },
   code2: {
-    title: 'the `install` command',
+    title: 'Pick what you need',
     text: `> tikit install
 ? Choose a component to install › - Use arrow-keys. Return to submit.
-❯   all components
-    alerts
-    avatars
-    buttons
-    cards`
+❯ all components
+ alerts
+ avatars
+ buttons
+ cards`
   }
 }
 

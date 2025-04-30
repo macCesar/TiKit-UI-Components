@@ -1,11 +1,11 @@
 Alloy.Globals.tabsSection = {
   title: 'Tabs',
   subtitle: 'General props: title, icon and activeIcon',
-  text: `The Tab component returns an instance of Titanium.UI.Tab that includes a custom icon created with an icon font such as FontAwesome, Material Icons or any other icon font of your choice.
+  text: `Navigate with style using our Tab component - a powerful wrapper for Titanium.UI.Tab that brings icon fonts to your navigation.
 
-By setting the 'title', 'icon' and 'activeIcon' (iOS only) properties, you'll get a Tab component with the icons nicely rendered.
+Simply set the 'title', 'icon', and 'activeIcon' (iOS only) properties to create beautiful, consistent tabs with custom icons.
 
-The 'icon' property is defined with the icon font name and the icon code, for example: 'fa fa-home' or 'mi mi-home'.`,
+Choose icons from FontAwesome, Material Icons, or any other icon font you've added to your project - just use the format 'fa fa-home' or 'mi mi-home'.`,
   code: {
     title: 'Tab Component',
     text: `<Tab title="Email" icon="far fa-envelope" activeIcon="fas fa-envelope" module="tikit.ui">
@@ -15,9 +15,9 @@ The 'icon' property is defined with the icon font name and the icon code, for ex
   extra: {
     title: 'Additional Props',
     subtitle: 'Any property for Ti.UI.Tab',
-    text: `These are regular Titanium.UI.Tab objects, so you can use all the properties and methods available for them.
+    text: `These are fully-powered Titanium.UI.Tab objects, so all the native properties and methods work exactly as you'd expect.
 
-For example you can set active tint and title color for each tab by using the 'activeTintColor' and 'activeTitleColor' properties, just like this current tab:`,
+Want branded tab highlights? Add 'activeTintColor' and 'activeTitleColor' properties - just like we did with this tab:`,
     code: {
       title: 'Tab Component',
       text: `<Tab class="active-tint-violet-900 active-title-violet-900" title="Tabs" icon="mio mi-security_update_good text-3xl" activeIcon="mit mi-security_update_good text-3xl" module="tikit.ui">
@@ -28,15 +28,15 @@ For example you can set active tint and title color for each tab by using the 'a
   copyFonts: {
     title: 'Free Icon Libraries',
     subtitle: 'icon-library command in PurgeTSS',
-    text: 'To copy the free versions of Font Awesome, Material Icons, Material Symbols or Framework7 Icons to your project, use the \'icon-library\' command in PurgeTSS:',
+    text: 'Need the icon fonts? Grab ready-to-use versions of Font Awesome, Material Icons, Material Symbols or Framework7 Icons with one simple command:',
     code: {
       title: 'icon-library command in PurgeTSS',
       text: `> purgetss icon-library --vendor=fa,mi,ms,f7
 
-• fa, fontawesome = Font Awesome Icons
-• mi, materialicons = Material Icons
-• ms, materialsymbol = Material Symbols
-• f7, framework7 = Framework7 Icons`
+- fa, fontawesome = Font Awesome Icons
+- mi, materialicons = Material Icons
+- ms, materialsymbol = Material Symbols
+- f7, framework7 = Framework7 Icons`
     }
   }
 }

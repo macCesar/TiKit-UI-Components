@@ -1,9 +1,9 @@
 Alloy.Globals.avatars = {
   title: 'Avatars',
   subtitle: 'General props: variant, size and classes',
-  text: `Use Avatars to portray people or objects. It can be used as a visual identifier for a user profile on your app.
+  text: `Give your app a personal touch with avatars that showcase users or objects.
 
-TiKit Avatar Component contains 6 variants:
+Our Avatar Component comes in 6 distinct styles:
   • chip
   • circular
   • square
@@ -11,7 +11,7 @@ TiKit Avatar Component contains 6 variants:
   • landscape
   • stacked
 
-With 6 different sizes each: xs, sm, md, lg, xl and 2xl.`,
+Each style scales perfectly with 6 different sizes: xs, sm, md, lg, xl and 2xl.`,
   code: {
     title: 'Avatar Component',
     text: '<Avatar variant="chip" size="base" module="tikit.ui" name="John Doe" image="link-to-image.jpg"/>'
@@ -20,9 +20,9 @@ With 6 different sizes each: xs, sm, md, lg, xl and 2xl.`,
     chip: {
       title: 'chip variant',
       subtitle: 'Main props: name and image',
-      text: `Set the name of the person and an image to display, using a local filesystem path, a remote URL, or a Blob object containing image data.
+      text: `Just provide a name and image - we'll handle the rest. The image can be from your local filesystem, a remote URL, or even a Blob object.
 
-The default colors are bg-gray-200 and text-gray-500. To change them use the 'classes' property, like the example below.`,
+Not feeling the default gray theme? Change it up with the 'classes' property as shown below.`,
       code: {
         title: 'chip variant with custom colors',
         text: '<Avatar variant="chip" size="base" name="Mr. John Doe" image="https://randomuser.me/api/portraits/men/86.jpg" classes="bg-violet-900 text-violet-50"/>'
@@ -31,9 +31,9 @@ The default colors are bg-gray-200 and text-gray-500. To change them use the 'cl
     circular: {
       title: 'circular variant',
       subtitle: 'Main props: name, image and border',
-      text: `Set 'border' to true to show a white border around the image.
+      text: `Want to make your avatar pop? Set 'border' to true for a clean white frame.
 
-Use the 'classes' prop to change the border color.`,
+Need a different border color? No problem - just tweak it with the 'classes' prop.`,
       code: {
         title: 'circular variant',
         text: '<Avatar variant="circular" size="base" module="tikit.ui" border="true" image="https://randomuser.me/api/portraits/men/86.jpg"/>'
@@ -42,9 +42,9 @@ Use the 'classes' prop to change the border color.`,
     square: {
       title: 'square variant',
       subtitle: 'Main props: name, image and border',
-      text: `Set 'border' to true to show a white border around the image.
+      text: `Clean edges, sharp look. Set 'border' to true for a framed effect.
 
-Use the 'classes' prop to change the border color.`,
+Customize the border color easily through the 'classes' prop.`,
       code: {
         title: 'square variant',
         text: '<Avatar variant="square" size="base" module="tikit.ui" border="true" classes="border-violet-900" image="https://randomuser.me/api/portraits/men/86.jpg"/>'
@@ -53,9 +53,9 @@ Use the 'classes' prop to change the border color.`,
     portrait: {
       title: 'portrait variant',
       subtitle: 'Main props: name and image',
-      text: `Use the 'classes' prop to change the border color.
+      text: `This variant features a subtle border that enhances your portrait images.
 
-The default border color is border-gray-500, use the 'classes' prop to change it.`,
+The default gray border works with everything, but feel free to customize it with the 'classes' prop.`,
       code: {
         title: 'portrait variant',
         text: '<Avatar variant="portrait" size="base" module="tikit.ui" classes="border-violet-900" image="https://randomuser.me/api/portraits/men/86.jpg"/>'
@@ -64,9 +64,9 @@ The default border color is border-gray-500, use the 'classes' prop to change it
     landscape: {
       title: 'landscape variant',
       subtitle: 'Main props: name and image',
-      text: `Use the 'classes' prop to change the border color.
+      text: `Perfect for wider shots or scenery with your subject.
 
-The default border color is border-gray-500, use the 'classes' prop to change it.`,
+Change up the default gray border with your brand colors using the 'classes' prop.`,
       code: {
         title: 'landscape variant',
         text: '<Avatar variant="landscape" size="base" module="tikit.ui" classes="border-violet-900" image="https://randomuser.me/api/portraits/men/86.jpg"/>'
@@ -75,7 +75,7 @@ The default border color is border-gray-500, use the 'classes' prop to change it
     stacked: {
       title: 'stacked variant',
       subtitle: 'Main props: title, icon and last',
-      text: 'To properly adjust the right margin of the last avatar in a stack, set its \'last\' property to true.',
+      text: 'Creating a team display? This variant is perfect for overlapping avatars. Just remember to mark the final avatar with last="true" to get the spacing right.',
       code: {
         title: 'stacked variant',
         text: `<View class="horizontal">
