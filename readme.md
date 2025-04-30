@@ -80,3 +80,27 @@ Keep your app's sections tidy and navigable with TiKit's stylish tab components 
 <p align="center">
   <img src="./purgetss/images/5. tabs.png" width="480" alt="iOS Tabs Demo Screen">
 </p>
+
+## Take It Further! 🚀
+
+That's just a taste of what TiKit UI Components can bring to your Titanium apps. Ready to use these components in your own projects?
+
+### Why We Built This
+
+We created TiKit because we believe beautiful UI shouldn't require endless custom styling. These components give you production-ready designs that work right out of the box, while still being flexible enough for your brand's unique look.
+
+### Getting Help
+
+Stuck on something? We've got your back:
+- Check out the [complete documentation](https://purgetss.com/tikit)
+- Found a bug? Open an issue on [GitHub](https://github.com/macCesar/TiKit-UI/issues)
+
+### What's Next?
+
+We're constantly adding new components and refining existing ones. Have a component you'd love to see in TiKit? Let us know!
+
+Go ahead - build something amazing with TiKit. We can't wait to see what you create!
+
+---
+
+<p align="center">Made with ❤️ by the PurgeTSS team</p>
