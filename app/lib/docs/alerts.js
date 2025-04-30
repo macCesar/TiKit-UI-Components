@@ -1,18 +1,18 @@
 Alloy.Globals.alerts = {
   title: 'Alerts',
   subtitle: 'General props: variant, color and classes',
-  text: `Alerts grab your user's attention with important messages without disrupting their workflow.
+  text: `Grab your users' attention with stylish alerts that deliver important messages without disrupting their flow.
 
-Our Alert Component comes in 3 flavors:
+Our Alert Component comes in 3 distinctive styles:
   • callout
   • pop
   • solid
 
-Each variant works with 6 standard colors: success, danger, warning, info, dark and light.
+Each style works perfectly with 6 standard colors: success, danger, warning, info, dark and light.
 
-We've also included 2 special colors you can customize: primary and secondary.
+Plus, we've added 2 customizable colors for your brand: primary and secondary.
 
-Want your own colors? Just use the PurgeTSS 'shades' command:`,
+Want your own color scheme? Just use the PurgeTSS 'shades' command:`,
   code: {
     title: 'shades command in PurgeTSS',
     text: `> purgetss shades '#hexcode1' primary
@@ -21,9 +21,9 @@ Want your own colors? Just use the PurgeTSS 'shades' command:`,
   extra: {
     title: 'Additional Props',
     subtitle: 'delay, duration and dismissible',
-    text: `Need some timing control? Use 'delay' to show the alert after a certain period and 'duration' to control animation speed. Both are in milliseconds.
+    text: `Fine-tune your alerts with timing controls - use 'delay' to show alerts after a pause and 'duration' to set animation speed. Both are in milliseconds.
 
-Make your alerts interactive by setting 'dismissible' to true - users can tap anywhere on the alert to close it.`,
+Let users dismiss alerts by setting 'dismissible' to true - a simple tap anywhere on the alert will close it.`,
     code: {
       title: 'Dismissible Alert with a delay',
       text: '<Alert variant="pop" color="info" delay="500" dismissible="true" module="tikit.ui" title="Dismissible Alert" text="Lorem ipsum dolor sit..."/>'
@@ -33,7 +33,7 @@ Make your alerts interactive by setting 'dismissible' to true - users can tap an
     callout: {
       title: 'callout variant',
       subtitle: 'Main props: title and text',
-      text: 'Clean and simple - just a title with a brief message.',
+      text: 'Simple and effective - just a title and message in a clean, attention-grabbing format.',
       code: {
         title: 'callout variant',
         text: '<Alert variant="callout" color="success" module="tikit.ui" title="Callout variant" text="Lorem ipsum dolor sit..."/>'
@@ -42,11 +42,11 @@ Make your alerts interactive by setting 'dismissible' to true - users can tap an
     pop: {
       title: 'pop variant',
       subtitle: 'Main props: title, text and icon',
-      text: `Add some visual punch with icons to emphasize your message.
+      text: `Add visual impact with icons that reinforce your message.
 
-You're free to use FontAwesome, Material Icons, or any other icon font you've added to your project.
+Works with FontAwesome, Material Icons, or any other icon font in your project.
 
-Switch up the icon using the 'icon' property and resize it with PurgeTSS's font classes:`,
+Customize the icon and size with simple properties:`,
       code: {
         title: 'pop variant with custom icon',
         text: '<Alert variant="pop" color="primary" module="tikit.ui" title="Primary Alert with custom Icon" text="Lorem ipsum dolor sit..." icon="mi mi-pending_actions text-3xl"/>'
@@ -55,9 +55,9 @@ Switch up the icon using the 'icon' property and resize it with PurgeTSS's font 
     solid: {
       title: 'solid variant',
       subtitle: 'Main props: title and icon',
-      text: `Need something bold? This full-width banner with icon definitely stands out.
+      text: `Make a statement with this bold, full-width banner featuring an eye-catching icon.
 
-Just like with 'pop', customize your icon using the 'icon' property and tweak its size with PurgeTSS font classes.`,
+Customize the look just like with 'pop' - choose your icon and size with simple properties.`,
       code: {
         title: 'solid variant',
         text: '<Alert variant="solid" color="primary" title="Primary Alert with custom Icon" icon="mi mi-pending_actions text-2xl" module="tikit.ui"/>'
