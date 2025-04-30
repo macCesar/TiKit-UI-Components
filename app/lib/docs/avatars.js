@@ -16,6 +16,20 @@ Each style scales perfectly with 6 different sizes: xs, sm, md, lg, xl and 2xl.`
     title: 'Avatar Component',
     text: '<Avatar variant="chip" size="base" module="tikit.ui" name="John Doe" image="link-to-image.jpg"/>'
   },
+  defaults: {
+    title: 'Default Values',
+    subtitle: 'Smart defaults make your code cleaner',
+    text: `Our avatars use these sensible defaults when properties aren't specified:
+
+• size: "base" - The avatar's size
+• variant: "chip" (with name) or "square" (without name) - The avatar's shape and style
+
+This means you can create effective avatars with minimal code:`,
+    code: {
+      title: 'Avatar with default values',
+      text: '<Avatar module="tikit.ui" image="path/to/image.jpg" />'
+    }
+  },
   variants: {
     chip: {
       title: 'chip variant',
@@ -74,7 +88,7 @@ Change up the default gray border with your brand colors using the 'classes' pro
     },
     stacked: {
       title: 'stacked variant',
-      subtitle: 'Main props: title, icon and last',
+      subtitle: 'Main props: image and last',
       text: 'Creating a team display? This variant is perfect for overlapping avatars. Just remember to mark the final avatar with last="true" to get the spacing right.',
       code: {
         title: 'stacked variant',
@@ -82,7 +96,7 @@ Change up the default gray border with your brand colors using the 'classes' pro
   <Avatar variant="stacked" size="base" module="tikit.ui" image="https://randomuser.me/api/portraits/men/86.jpg"/>
   <Avatar variant="stacked" size="base" module="tikit.ui" image="https://randomuser.me/api/portraits/men/87.jpg"/>
   <Avatar variant="stacked" size="base" module="tikit.ui" image="https://randomuser.me/api/portraits/men/62.jpg"/>
-  <Avatar variant="stacked" size="base" module="tikit.ui" last="true" image="https://randomuser.me/api/gs/men/88.jpg"/>
+  <Avatar variant="stacked" size="base" module="tikit.ui" last="true" image="https://randomuser.me/api/portraits/men/88.jpg"/>
 </View>`
       }
     },

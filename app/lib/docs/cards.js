@@ -12,6 +12,20 @@ Our Card Component features 4 unique variants:
 Each comes in 4 color schemes: black, dark, light and white.
 
 We've added colored backgrounds to the white variants below so you can see them better.`,
+  defaults: {
+    title: 'Default Values',
+    subtitle: 'Smart defaults make your code cleaner',
+    text: `Our cards use these sensible defaults when properties aren't specified:
+
+• color: "dark" - The card's color scheme
+• variant: "showcase" (with image) or "content" (with subtitle) or "code" (default) - The card's layout style
+
+This means you can create effective cards with minimal code:`,
+    code: {
+      title: 'Card with default values',
+      text: '<Card module="tikit.ui" title="Simple Card" text="Using defaults" />'
+    }
+  },
   code: {
     title: 'Card Component',
     text: '<Card variant="code" color="black" module="tikit.ui" copy="true" title="Card Title" text="Some code or text to display!"/>'
@@ -32,11 +46,11 @@ Our examples use the clean 'FiraCode-Light' family.`
     },
     showcase: {
       title: 'showcase variant',
-      subtitle: 'Main props: title, text and image',
-      text: 'Put your visuals front and center with this eye-catching layout - perfect for highlighting projects or features with an image, title, and brief description.',
+      subtitle: 'Main props: title, text, image and rounded',
+      text: 'Put your visuals front and center with this eye-catching layout - perfect for highlighting projects or features with an image, title, and brief description. The \'rounded\' property accepts any integer value (0 or greater) to control the border radius.',
       code: {
         title: 'showcase variant',
-        text: '<Card variant="showcase" color="black" title="Pocket" text=\'Mobile app marketing website\' image="images/showcase/1.png"/>'
+        text: '<Card variant="showcase" color="black" title="Pocket" text="Mobile app marketing website" image="images/showcase/1.png"/>'
       }
     },
     quote: {

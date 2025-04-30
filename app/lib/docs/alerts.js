@@ -8,15 +8,27 @@ Our Alert Component comes in 3 distinctive styles:
   • pop
   • solid
 
-Each style works perfectly with 6 standard colors: success, danger, warning, info, dark and light.
-
-Plus, we've added 2 customizable colors for your brand: primary and secondary.
+Each style works perfectly with 8 colors: success, danger, warning, info, dark, light, primary and secondary.
 
 Want your own color scheme? Just use the PurgeTSS 'shades' command:`,
   code: {
     title: 'shades command in PurgeTSS',
     text: `> purgetss shades '#hexcode1' primary
 > purgetss shades '#hexcode2' secondary`
+  },
+  defaults: {
+    title: 'Default Values',
+    subtitle: 'Smart defaults make your code cleaner',
+    text: `Our alerts use these sensible defaults when properties aren't specified:
+
+• color: "dark" - The alert's color scheme
+• variant: "pop" (with text) or "solid" (without text) - The alert's visual style
+
+This means you can create effective alerts with minimal code:`,
+    code: {
+      title: 'Alert with default values',
+      text: '<Alert module="tikit.ui" title="Simple Alert" text="With default values" />'
+    }
   },
   extra: {
     title: 'Additional Props',

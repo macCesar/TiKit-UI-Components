@@ -10,6 +10,15 @@
       <Card variant="content" color="black" title="Alloy.Globals.alerts.title" subtitle="Alloy.Globals.alerts.subtitle" text="Alloy.Globals.alerts.text" classes="mt-4" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.alerts.code.title" text='Alloy.Globals.alerts.code.text' />
 
+      <!-- Default Values Section -->
+      <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.alerts.defaults.title" subtitle="Alloy.Globals.alerts.defaults.subtitle" text="Alloy.Globals.alerts.defaults.text" />
+      <Card variant="code" color="black" copy="true" title="Alloy.Globals.alerts.defaults.code.title" text='Alloy.Globals.alerts.defaults.code.text' />
+
+      <!-- Example of Alert with default values -->
+      <View class="vertical w-screen">
+        <Alert module="tikit.ui" title="Simple Alert" text="With default values" classes="mt-4" />
+      </View>
+
       <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.alerts.extra.title" subtitle="Alloy.Globals.alerts.extra.subtitle" text="Alloy.Globals.alerts.extra.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.alerts.extra.code.title" text='Alloy.Globals.alerts.extra.code.text' />
 

@@ -108,6 +108,7 @@
 '.mx-auto': { right: null, left: null }
 '.my-0.5': { top: 2, bottom: 2 }
 '.my-1': { top: 4, bottom: 4 }
+'.my-2': { top: 8, bottom: 8 }
 '.my-4': { top: 16, bottom: 16 }
 '.opacity-0': { opacity: 0 }
 '.portrait': { orientationModes: [ Ti.UI.PORTRAIT ] }
@@ -271,3 +272,6 @@
 // Font Styles
 '.font-bold': { font: { fontFamily: 'MavenPro-Bold' } }
 '.font-regular': { font: { fontFamily: 'MavenPro-Regular' } }
+
+// Unused or unsupported classes
+// '.justify-center': { }

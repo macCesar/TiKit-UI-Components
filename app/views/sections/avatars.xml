@@ -4,6 +4,13 @@
       <Card variant="content" color="black" title="Alloy.Globals.avatars.title" subtitle="Alloy.Globals.avatars.subtitle" text="Alloy.Globals.avatars.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.avatars.code.title" text='Alloy.Globals.avatars.code.text' />
 
+      <!-- Default Values Section -->
+      <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.avatars.defaults.title" subtitle="Alloy.Globals.avatars.defaults.subtitle" text="Alloy.Globals.avatars.defaults.text" />
+      <Card variant="code" color="black" copy="true" title="Alloy.Globals.avatars.defaults.code.title" text='Alloy.Globals.avatars.defaults.code.text' />
+      <View class="horizontal mt-4">
+        <Avatar module="tikit.ui" image="https://randomuser.me/api/portraits/men/86.jpg" classes="mx-4" />
+      </View>
+
       <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.avatars.variants.chip.title" subtitle="Alloy.Globals.avatars.variants.chip.subtitle" text="Alloy.Globals.avatars.variants.chip.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.avatars.variants.chip.code.title" text='Alloy.Globals.avatars.variants.chip.code.text' />
       <View class="vertical mt-4">

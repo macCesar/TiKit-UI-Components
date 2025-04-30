@@ -19,10 +19,34 @@ Choose icons from FontAwesome, Material Icons, or any other icon font you've add
 
 Want branded tab highlights? Add 'activeTintColor' and 'activeTitleColor' properties - just like we did with this tab:`,
     code: {
-      title: 'Tab Component',
+      title: 'Tab with custom active colors',
       text: `<Tab class="active-tint-violet-900 active-title-violet-900" title="Tabs" icon="mio mi-security_update_good text-3xl" activeIcon="mit mi-security_update_good text-3xl" module="tikit.ui">
   <Require src="sections/tabs"/>
 </Tab>`
+    }
+  },
+  defaults: {
+    title: 'Working with Multiple Tabs',
+    subtitle: 'Consistent styling across your app',
+    text: `For a cohesive navigation experience, use TiKit Tabs consistently across your TabGroup.
+
+Here's an example of a complete TabGroup with styled tabs:`,
+    code: {
+      title: 'Complete TabGroup example',
+      text: `<TabGroup>
+  <Tab module="tikit.ui" title="Home" icon="fa fa-home" activeIcon="fas fa-home">
+    <Require src="home_window" />
+  </Tab>
+  <Tab module="tikit.ui" title="Profile" 
+       class="active-tint-indigo-600 active-title-indigo-600"
+       icon="mi mi-person_outline text-3xl" 
+       activeIcon="mi mi-person text-3xl">
+    <Require src="profile_window" />
+  </Tab>
+  <Tab module="tikit.ui" title="Settings" icon="fa fa-cog" activeIcon="fas fa-cog">
+    <Require src="settings_window" />
+  </Tab>
+</TabGroup>`
     }
   },
   copyFonts: {

@@ -12,6 +12,20 @@ Our Button Component includes 6 stylish variants:
   • icon-right
 
 Each scales perfectly with 6 sizes: xs, sm, base, lg, xl and 2xl.`,
+  defaults: {
+    title: 'Default Values',
+    subtitle: 'Smart defaults make your code cleaner',
+    text: `Our buttons use these sensible defaults when properties aren't specified:
+
+• size: "base" - The button's size
+• variant: "icon-left" (with icon) or "filled" (without icon) - The button's visual style
+
+This means you can create effective buttons with minimal code:`,
+    code: {
+      title: 'Button with default values',
+      text: '<Button module="tikit.ui" title="Default Button" />'
+    }
+  },
   extra: {
     title: 'Custom Icons',
     subtitle: 'Use any Icon Font Library',

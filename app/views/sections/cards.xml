@@ -4,6 +4,11 @@
       <Card variant="content" color="black" title="Alloy.Globals.cards.title" subtitle="Alloy.Globals.cards.subtitle" text="Alloy.Globals.cards.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.cards.code.title" text='Alloy.Globals.cards.code.text' />
 
+      <!-- Default Values Section -->
+      <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.cards.defaults.title" subtitle="Alloy.Globals.cards.defaults.subtitle" text="Alloy.Globals.cards.defaults.text" />
+      <Card variant="code" color="black" copy="true" title="Alloy.Globals.cards.defaults.code.title" text='Alloy.Globals.cards.defaults.code.text' />
+      <Card module="tikit.ui" title="Simple Card" text="Using defaults" classes="mt-4" />
+
       <!-- Variants -->
       <!-- Code Variant -->
       <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.cards.variants.code.title" subtitle="Alloy.Globals.cards.variants.code.subtitle" text="Alloy.Globals.cards.variants.code.text" />

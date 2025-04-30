@@ -4,6 +4,10 @@
       <Card variant="content" color="black" title="Alloy.Globals.tabsSection.title" subtitle="Alloy.Globals.tabsSection.subtitle" text="Alloy.Globals.tabsSection.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.tabsSection.code.title" text='Alloy.Globals.tabsSection.code.text' />
 
+      <!-- Default Values Section -->
+      <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.tabsSection.defaults.title" subtitle="Alloy.Globals.tabsSection.defaults.subtitle" text="Alloy.Globals.tabsSection.defaults.text" />
+      <Card variant="code" color="black" copy="true" title="Alloy.Globals.tabsSection.defaults.code.title" text='Alloy.Globals.tabsSection.defaults.code.text' />
+
       <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.tabsSection.extra.title" subtitle="Alloy.Globals.tabsSection.extra.subtitle" text="Alloy.Globals.tabsSection.extra.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.tabsSection.extra.code.title" text='Alloy.Globals.tabsSection.extra.code.text' />
 

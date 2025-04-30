@@ -4,6 +4,12 @@
       <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.buttons.title" subtitle="Alloy.Globals.buttons.subtitle" text="Alloy.Globals.buttons.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.buttons.code.title" text='Alloy.Globals.buttons.code.text' />
 
+      <!-- Default Values Section -->
+      <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.buttons.defaults.title" subtitle="Alloy.Globals.buttons.defaults.subtitle" text="Alloy.Globals.buttons.defaults.text" />
+      <Card variant="code" color="black" copy="true" title="Alloy.Globals.buttons.defaults.code.title" text='Alloy.Globals.buttons.defaults.code.text' />
+      <View class="horizontal mt-4 justify-center">
+        <Button module="tikit.ui" title="Default Button" classes="my-2" />
+      </View>
 
       <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.buttons.variants.border.title" subtitle="Alloy.Globals.buttons.variants.border.subtitle" text="Alloy.Globals.buttons.variants.border.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.buttons.variants.border.code.title" text='Alloy.Globals.buttons.variants.border.code.text' />
