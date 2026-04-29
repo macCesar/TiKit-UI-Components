@@ -19,5 +19,9 @@
     <Tab module="tikit.ui" class="active-tint-violet-900 active-title-violet-900" title="Tabs" icon="mio mi-security_update_good text-3xl" activeIcon="mit mi-security_update_good text-3xl">
       <Require src="sections/tabs" />
     </Tab>
+
+    <Tab module="tikit.ui" title="Forms" icon="mio mi-ballot text-3xl" activeIcon="mit mi-ballot text-3xl">
+      <Require src="sections/forms" />
+    </Tab>
   </TabGroup>
 </Alloy>

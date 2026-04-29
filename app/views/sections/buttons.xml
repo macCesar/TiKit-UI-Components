@@ -7,7 +7,7 @@
       <!-- Default Values Section -->
       <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.buttons.defaults.title" subtitle="Alloy.Globals.buttons.defaults.subtitle" text="Alloy.Globals.buttons.defaults.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.buttons.defaults.code.title" text='Alloy.Globals.buttons.defaults.code.text' />
-      <View class="horizontal mt-4 justify-center">
+      <View class="horizontal mt-4">
         <Button module="tikit.ui" title="Default Button" classes="my-2" />
       </View>
 

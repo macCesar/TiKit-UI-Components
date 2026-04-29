@@ -1,0 +1,35 @@
+<Alloy module="tikit.ui">
+  <Window title="Forms" class="ios:extend-safe-area-false ios:nav-bar-hidden">
+    <ScrollView class="wh-screen vertical disable-bounce scroll-type-vertical content-w-screen">
+      <Card variant="content" color="black" title="Alloy.Globals.forms.title" subtitle="Alloy.Globals.forms.subtitle" text="Alloy.Globals.forms.text" />
+      <Card variant="code" color="black" copy="true" title="Alloy.Globals.forms.code.title" text='Alloy.Globals.forms.code.text' />
+
+      <!-- Default Values Section -->
+      <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.forms.defaults.title" subtitle="Alloy.Globals.forms.defaults.subtitle" text="Alloy.Globals.forms.defaults.text" />
+      <Card variant="code" color="black" copy="true" title="Alloy.Globals.forms.defaults.code.title" text='Alloy.Globals.forms.defaults.code.text' />
+      <Card module="tikit.ui" title="Simple Card" text="Using defaults" classes="mt-4" />
+
+      <!-- Variants -->
+
+      <!-- Showcase Variant -->
+      <!-- callout Variant Examples -->
+      <View class="vertical mx-4 mt-4 w-screen">
+        <Form id="light" variant="input" color="light" label="Input Label - Light" hintText="Hint Text - Light" />
+        <Form variant="input" color="dark" label="Input Label - Dark" hintText="Hint Text - Dark" />
+        <Form variant="input" color="black" label="Input Label - Black" hintText="Hint Text - Black" />
+
+        <View class="rounded-2 bg-gray-500">
+          <Form variant="input" color="white" label="Input Label - White" classes="mx-2 my-1" hintText="Hint Text - White" />
+        </View>
+        <!-- <Form variant="input" color="primary" label="Input Label - Primary" errorMessage="Some error message!" hintText="Hint Text - Primary" />
+        <Form variant="input" color="secondary" label="Input Label - Secondary" hintText="Hint Text - Secondary" />
+        <Form variant="input" color="info" label="Input Label - Info" hintText="Hint Text - Info" />
+        <Form variant="input" color="success" label="Input Label - Success" hintText="Hint Text - Success" />
+        <Form variant="input" color="warning" label="Input Label - Warning" hintText="Hint Text - Warning" />
+        <Form variant="input" color="danger" label="Input Label - Danger" hintText="Hint Text - Danger" /> -->
+      </View>
+
+      <Button onClick="doClick" title="Cambiar el Input" class="mt-4 w-44" />
+    </ScrollView>
+  </Window>
+</Alloy>
