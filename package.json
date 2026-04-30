@@ -2,7 +2,7 @@
   "name": "testing-tikit-final",
   "private": true,
   "description": "Welcome to your TiDev Titanium Mobile Project",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
