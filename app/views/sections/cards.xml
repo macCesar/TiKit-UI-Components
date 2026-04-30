@@ -1,6 +1,6 @@
 <Alloy module="tikit.ui">
-  <Window title="Cards" class="ios:extend-safe-area-false ios:nav-bar-hidden">
-    <ScrollView class="wh-screen vertical disable-bounce scroll-type-vertical content-w-screen">
+  <Window title="Cards" class="ios:auto-adjust-scroll-view-insets ios:extend-edges-all ios:large-title-enabled">
+    <ScrollView class="wh-screen vertical disable-bounce scroll-type-vertical content-w-screen content-h-auto">
       <Card variant="content" color="black" title="Alloy.Globals.cards.title" subtitle="Alloy.Globals.cards.subtitle" text="Alloy.Globals.cards.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.cards.code.title" text='Alloy.Globals.cards.code.text' />
 
@@ -13,6 +13,7 @@
       <!-- Code Variant -->
       <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.cards.variants.code.title" subtitle="Alloy.Globals.cards.variants.code.subtitle" text="Alloy.Globals.cards.variants.code.text" />
       <Card variant="code" color="black" copy="true" title="code variant - black" text='<Card variant="code" color="black" copy="true" title="code variant - black" text="Some code or text to show!" />' />
+
       <Card variant="code" color="dark" copy="true" classes="mt-4" title="code variant - dark" text='<Card variant="code" color="dark" copy="true" title="code variant - dark" text="Some code or text to show!" />' />
       <Card variant="code" color="light" copy="true" classes="mt-4" title="code variant - light" text='<Card variant="code" color="light" copy="true" title="code variant - light" text="Some code or text to show!" />' />
       <View class="mt-4 w-screen bg-violet-900">
@@ -22,6 +23,7 @@
       <!-- Showcase Variant -->
       <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.cards.variants.showcase.title" subtitle="Alloy.Globals.cards.variants.showcase.subtitle" text="Alloy.Globals.cards.variants.showcase.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.cards.variants.showcase.code.title" text='Alloy.Globals.cards.variants.showcase.code.text' />
+
       <Card variant="showcase" color="black" classes="mt-4" title="Pocket" text='Mobile app marketing website' image="images/showcase/2.png" />
       <Card variant="showcase" color="dark" classes="mt-4" title="Lemon Squeezy" text='SaaS application' image="images/showcase/1.png" />
       <Card variant="showcase" color="light" classes="mt-4" title="Algolia Docs" text='Documentation website' image="images/showcase/3.png" />
@@ -32,6 +34,7 @@
       <!-- Quote Variant -->
       <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.cards.variants.quote.title" subtitle="Alloy.Globals.cards.variants.quote.subtitle" text="Alloy.Globals.cards.variants.quote.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.cards.variants.quote.code.title" text='Alloy.Globals.cards.variants.quote.code.text' />
+
       <Card variant="quote" color="black" classes="mt-4" name="John Doe" text='Quas ullam, quis eius a blanditiis, est necessitatibus exercitationem nemo officiis voluptatem quaerat aspernatur tenetur ipsam repellat libero, hic itaque.' />
       <Card variant="quote" color="dark" classes="mt-4" name="John Doe" text='Quas ullam, quis eius a blanditiis, est necessitatibus exercitationem nemo officiis voluptatem quaerat aspernatur tenetur ipsam repellat libero, hic itaque.' />
       <Card variant="quote" color="light" classes="mt-4" name="John Doe" text='Quas ullam, quis eius a blanditiis, est necessitatibus exercitationem nemo officiis voluptatem quaerat aspernatur tenetur ipsam repellat libero, hic itaque.' />
@@ -42,6 +45,7 @@
       <!-- Block Variant -->
       <Card variant="content" color="black" classes="mt-4" title="Alloy.Globals.cards.variants.content.title" subtitle="Alloy.Globals.cards.variants.content.subtitle" text="Alloy.Globals.cards.variants.content.text" />
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.cards.variants.content.code.title" text='Alloy.Globals.cards.variants.content.code.text' />
+
       <Card variant="content" color="black" classes="mt-4" title="variant: black block" subtitle="This is a subtitle" text='Alloy.Globals.lorem' />
       <Card variant="content" color="dark" classes="mt-2" title="variant: dark block" subtitle="This is a subtitle" text='Alloy.Globals.lorem' />
       <Card variant="content" color="light" classes="mt-2" title="variant: light block" subtitle="This is a subtitle" text='Alloy.Globals.lorem' />

@@ -1,7 +1,8 @@
 <Alloy module="tikit.ui">
-  <Window title="Avatars" class="ios:extend-safe-area-false ios:nav-bar-hidden">
-    <ScrollView class="wh-screen vertical disable-bounce scroll-type-vertical content-w-screen">
+  <Window title="Avatars" class="ios:auto-adjust-scroll-view-insets ios:extend-edges-all ios:large-title-enabled">
+    <ScrollView class="wh-screen vertical disable-bounce scroll-type-vertical content-w-screen content-h-auto">
       <Card variant="content" color="black" title="Alloy.Globals.avatars.title" subtitle="Alloy.Globals.avatars.subtitle" text="Alloy.Globals.avatars.text" />
+
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.avatars.code.title" text='Alloy.Globals.avatars.code.text' />
 
       <!-- Default Values Section -->
