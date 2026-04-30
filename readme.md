@@ -73,6 +73,10 @@ Organize information in beautiful, contained modules with TiKit's card collectio
   <img src="./purgetss/images/4. cards.png" width="480" alt="iOS Cards Demo Screen">
 </p>
 
+### Forms
+
+Capture user input with TiKit's form components - text fields and text areas across every color scheme, with full keyboard configuration (type, appearance, return key, autocapitalization) and built-in support for password masking, autocorrect, max length, and autofill.
+
 ### Tabs
 
 Keep your app's sections tidy and navigable with TiKit's stylish tab components - navigation that looks as good as it works.
