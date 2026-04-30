@@ -17,7 +17,6 @@
 '.-mt-0.5': { top: -2 }
 '.active-tint-violet-900': { activeTintColor: '#4c1d95' }
 '.active-title-violet-900': { activeTitleColor: '#4c1d95' }
-'.autocorrect-false': { autocorrect: false }
 '.bg-cover': { scalingMode: Ti.Media.IMAGE_SCALING_ASPECT_FILL }
 '.bg-cyan-500': { backgroundColor: '#06b6d4' }
 '.bg-gray-200': { backgroundColor: '#e5e7eb' }
@@ -44,11 +43,12 @@
 '.border-gray-600': { borderColor: '#4b5563' }
 '.border-gray-900': { borderColor: '#111827' }
 '.border-green-500': { borderColor: '#22c55e' }
-'.border-primary-400': { borderColor: '#7a8b96' }
+'.border-primary-800': { borderColor: '#3e454c' }
 '.border-red-500': { borderColor: '#ef4444' }
-'.border-secondary-400': { borderColor: '#a3c457' }
+'.border-secondary-800': { borderColor: '#405222' }
 '.border-white': { borderColor: '#ffffff' }
 '.border-yellow-500': { borderColor: '#eab308' }
+'.content-h-auto': { contentHeight: Ti.UI.SIZE }
 '.content-w-screen': { contentWidth: Ti.UI.FILL }
 '.disable-bounce': { disableBounce: true }
 '.editable-false': { editable: false }
@@ -74,9 +74,9 @@
 '.hint-text-gray-400': { hintTextColor: '#9ca3af' }
 '.hint-text-gray-500': { hintTextColor: '#6b7280' }
 '.hint-text-green-300': { hintTextColor: '#86efac' }
-'.hint-text-primary-200': { hintTextColor: '#cbd2d6' }
+'.hint-text-primary-300': { hintTextColor: '#a6b3ba' }
 '.hint-text-red-300': { hintTextColor: '#fca5a5' }
-'.hint-text-secondary-200': { hintTextColor: '#d8e7af' }
+'.hint-text-secondary-300': { hintTextColor: '#bdd680' }
 '.hint-text-yellow-300': { hintTextColor: '#fde047' }
 '.horizontal': { layout: 'horizontal' }
 '.italic': { font: { fontStyle: 'italic' } }
@@ -112,6 +112,7 @@
 '.mt-0.5': { top: 2 }
 '.mt-1': { top: 4 }
 '.mt-1.5': { top: 6 }
+'.mt-16': { top: 64 }
 '.mt-2': { top: 8 }
 '.mt-4': { top: 16 }
 '.mt-5': { top: 20 }
@@ -136,6 +137,7 @@
 '.p-2': { padding: { top: 8, right: 8, bottom: 8, left: 8 } }
 '.portrait': { orientationModes: [ Ti.UI.PORTRAIT ] }
 '.primary': { color: '#5f707b' }
+'.py-2': { padding: { top: 8, bottom: 8 } }
 '.rounded': { borderRadius: 4 }
 '.rounded-10': { borderRadius: 20 }
 '.rounded-11': { borderRadius: 22 }
@@ -165,6 +167,7 @@
 '.text-3xl': { font: { fontSize: 30 } }
 '.text-7xl': { font: { fontSize: 72 } }
 '.text-base': { font: { fontSize: 16 } }
+'.text-blue-800': { color: '#1e40af', textColor: '#1e40af' }
 '.text-center': { textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER }
 '.text-cyan-500': { color: '#06b6d4', textColor: '#06b6d4' }
 '.text-cyan-600': { color: '#0891b2', textColor: '#0891b2' }
@@ -179,11 +182,11 @@
 '.text-left': { textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT }
 '.text-lg': { font: { fontSize: 18 } }
 '.text-primary': { color: '#5f707b', textColor: '#5f707b' }
-'.text-primary-400': { color: '#7a8b96', textColor: '#7a8b96' }
+'.text-primary-900': { color: '#373c42', textColor: '#373c42' }
 '.text-red-500': { color: '#ef4444', textColor: '#ef4444' }
 '.text-red-600': { color: '#dc2626', textColor: '#dc2626' }
 '.text-secondary': { color: '#8fb63e', textColor: '#8fb63e' }
-'.text-secondary-400': { color: '#a3c457', textColor: '#a3c457' }
+'.text-secondary-900': { color: '#384720', textColor: '#384720' }
 '.text-sm': { font: { fontSize: 14 } }
 '.text-violet-50': { color: '#f5f3ff', textColor: '#f5f3ff' }
 '.text-white': { color: '#ffffff', textColor: '#ffffff' }
@@ -218,16 +221,20 @@
 // Platform and Device Modifiers
 '.android:border-style-none[platform=android]': { borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE }
 '.android:pt-20[platform=android]': { padding: { top: 80 } }
+'.android:px-2[platform=android]': { padding: { right: 8, left: 8 } }
 '.android:px-8[platform=android]': { padding: { right: 32, left: 32 } }
 '.android:touch-feedback[platform=android]': { touchFeedback: true }
-'.ios:extend-safe-area-false[platform=ios]': { extendSafeArea: false }
-'.ios:nav-bar-hidden[platform=ios]': { navBarHidden: true }
+'.ios:auto-adjust-scroll-view-insets[platform=ios]': { autoAdjustScrollViewInsets: true }
+'.ios:extend-edges-all[platform=ios]': { extendEdges: [ Ti.UI.EXTEND_EDGE_ALL ] }
+'.ios:large-title-enabled[platform=ios]': { largeTitleEnabled: true }
 '.ios:pb-4[platform=ios]': { padding: { bottom: 16 } }
 '.ios:prevent-default-image[platform=ios]': { preventDefaultImage: true }
 '.ios:pt-12[platform=ios]': { padding: { top: 48 } }
+'.ios:px-1[platform=ios]': { padding: { right: 4, left: 4 } }
 '.ios:px-3[platform=ios]': { padding: { right: 12, left: 12 } }
 
 // Color Opacity Modifiers
+'.bg-blue-500/80': { backgroundColor: '#cc3b82f6' }
 '.bg-gray-500/10': { backgroundColor: '#1a6b7280' }
 '.bg-gray-500/50': { backgroundColor: '#806b7280' }
 '.bg-gray-500/7.5': { backgroundColor: '#136b7280' }
