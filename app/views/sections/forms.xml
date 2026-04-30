@@ -1,7 +1,8 @@
 <Alloy module="tikit.ui">
-  <Window title="Forms" class="ios:extend-safe-area-false ios:nav-bar-hidden">
-    <ScrollView class="wh-screen vertical disable-bounce scroll-type-vertical content-w-screen">
+  <Window title="Forms" class="ios:auto-adjust-scroll-view-insets ios:extend-edges-all ios:large-title-enabled">
+    <ScrollView class="wh-screen vertical disable-bounce scroll-type-vertical content-w-screen content-h-auto">
       <Card variant="content" color="black" title="Alloy.Globals.forms.title" subtitle="Alloy.Globals.forms.subtitle" text="Alloy.Globals.forms.text" />
+
       <Card variant="code" color="black" copy="true" title="Alloy.Globals.forms.code.title" text='Alloy.Globals.forms.code.text' />
 
       <!-- Default Values Section -->
@@ -21,15 +22,16 @@
         <View class="rounded-2 bg-gray-500">
           <Form variant="input" color="white" label="Input Label - White" classes="mx-2 my-1" hintText="Hint Text - White" />
         </View>
-        <!-- <Form variant="input" color="primary" label="Input Label - Primary" errorMessage="Some error message!" hintText="Hint Text - Primary" />
+
+        <Form variant="input" color="primary" label="Input Label - Primary" errorMessage="Some error message!" hintText="Hint Text - Primary" />
         <Form variant="input" color="secondary" label="Input Label - Secondary" hintText="Hint Text - Secondary" />
         <Form variant="input" color="info" label="Input Label - Info" hintText="Hint Text - Info" />
         <Form variant="input" color="success" label="Input Label - Success" hintText="Hint Text - Success" />
         <Form variant="input" color="warning" label="Input Label - Warning" hintText="Hint Text - Warning" />
-        <Form variant="input" color="danger" label="Input Label - Danger" hintText="Hint Text - Danger" /> -->
+        <Form variant="input" color="danger" label="Input Label - Danger" hintText="Hint Text - Danger" />
       </View>
 
-      <Button onClick="doClick" title="Cambiar el Input" class="mt-4 w-44" />
+      <Button onClick="doClick" title="Update Label" class="mt-4 w-44" />
     </ScrollView>
   </Window>
 </Alloy>

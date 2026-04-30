@@ -1,6 +1,6 @@
 function doClick() {
   $.light.update({
     input: 'Updated Input',
-    label: 'Updated Label que es muy grande y debe de ocupar dos renglones',
+    label: 'Updated Label that is very large and should take up two lines',
   })
 }
